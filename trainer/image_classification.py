@@ -232,7 +232,7 @@ def main():
         print(f"Snapshots will be saved to: {snapshot_dir}")
         
         
-       batch_inputs, batch_targets, teacher_loss, student_loss = evaluate(teacher, student, test_loader, 0)
+        batch_inputs, batch_targets, teacher_loss, student_loss = evaluate(teacher, student, test_loader, 0)
         
             torch.save({
         'epoch': epoch,
