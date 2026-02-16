@@ -227,7 +227,7 @@ def main():
 
 
 
-        snapshot_dir = '/content/drive/MyDrive/LoT_snapshots/' + args.exp_name
+        snapshot_dir = '/kaggle/working/snapshots/' + args.exp_name
         os.makedirs(snapshot_dir, exist_ok=True)
         print(f"Snapshots will be saved to: {snapshot_dir}")
         
