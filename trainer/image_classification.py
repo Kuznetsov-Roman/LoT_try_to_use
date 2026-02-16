@@ -56,11 +56,20 @@ def evaluate(teacher, student, loader, epoch):
     teacher_correct, student_correct = 0, 0
     total = 0
     start = time.time()
-
-
-    for batch in loader:
+    
+    # Сохраняем первый батч
+    first_batch_inputs = None
+    first_batch_targets = None
+    
+    for batch_idx, batch in enumerate(loader):
         with torch.no_grad():
             inputs, targets = try_cuda(*batch[:2])
+            
+            # Сохраняем первый батч
+            if batch_idx == 0:
+                first_batch_inputs = inputs.cpu()
+                first_batch_targets = targets.cpu()
+            
             teacher_pred=F.log_softmax(teacher(inputs), dim=-1)
             student_pred=F.log_softmax(student(inputs), dim=-1)
             teacher_loss+=F.cross_entropy(teacher_pred, targets)
@@ -68,11 +77,20 @@ def evaluate(teacher, student, loader, epoch):
             total += targets.size(0)
             teacher_correct+=teacher_pred.max(1)[1].eq(targets).sum().item()
             student_correct+=student_pred.max(1)[1].eq(targets).sum().item()
+    
     end = time.time()
     step=epoch
+    
+    avg_teacher_loss = teacher_loss.item() / len(loader)
+    avg_student_loss = student_loss.item() / len(loader)
+    
     print('[eval] Epoch: %d | Teacher Test Loss: %.3f | Teacher Test Acc: %.3f | Student Test Loss: %.3f | Student Test Acc: %.3f | Time: %.3f |'
-            % (step, teacher_loss / len(loader), 100. * teacher_correct / total, student_loss / len(loader), 100. * student_correct / total, end-start))
+            % (step, avg_teacher_loss, 100. * teacher_correct / total, avg_student_loss, 100. * student_correct / total, end-start))
+    
     wandb.log({'teacher test acc': 100. * teacher_correct / total, 'student test acc': 100. * student_correct / total}, step=step)
+    
+    # Возвращаем батч и лоссы
+    return first_batch_inputs, first_batch_targets, avg_teacher_loss, avg_student_loss
 
 
 def train(teacher, student, loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler):
@@ -213,17 +231,18 @@ def main():
         os.makedirs(snapshot_dir, exist_ok=True)
         print(f"Snapshots will be saved to: {snapshot_dir}")
         
-        evaluate(teacher, student, test_loader, 0)
         
-        # Сохраняем начальное состояние (эпоха 0)
-        torch.save({
-            'epoch': 0,
-            'teacher_state_dict': teacher.state_dict(),
-            'student_state_dict': student.state_dict(),
-        }, os.path.join(snapshot_dir, f'snapshot_epoch_0.pt'))
-
-
-
+       batch_inputs, batch_targets, teacher_loss, student_loss = evaluate(teacher, student, test_loader, 0)
+        
+            torch.save({
+        'epoch': epoch,
+        'teacher_state_dict': teacher.state_dict(),
+        'student_state_dict': student.state_dict(),
+        'batch_inputs': batch_inputs,
+        'batch_targets': batch_targets,
+        'teacher_loss': teacher_loss,
+        'student_loss': student_loss
+                        }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
 
         print(f"==== train and evaluate unequal restart ====")
         if args.optimizer=='sgd':
@@ -237,18 +256,17 @@ def main():
             train(teacher, student, train_loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler)
             evaluate(teacher, student, test_loader, epoch)
 
-
-            torch.save({
-        'epoch': epoch,
-        'teacher_state_dict': teacher.state_dict(),
-        'student_state_dict': student.state_dict(),
-        'batch_inputs': batch_inputs,
-        'batch_targets': batch_targets,
-        'teacher_loss': teacher_loss,
-        'student_loss': student_loss
-                        }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
+ 
     
-
+            torch.save({
+                'epoch': epoch,
+                'teacher_state_dict': teacher.state_dict(),
+                'student_state_dict': student.state_dict(),
+                'batch_inputs': batch_inputs,
+                'batch_targets': batch_targets,
+                'teacher_loss': teacher_loss,
+                'student_loss': student_loss
+            }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
 
 
         torch.save(teacher.state_dict(), args.save+'_teacher.pt')
