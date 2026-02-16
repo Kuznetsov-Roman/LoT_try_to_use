@@ -163,7 +163,7 @@ parser.add_argument('--epochs', type=int, default=180)
 randomhash = ''.join(str(time.time()).split('.'))
 parser.add_argument('--save', type=str,  default='ckpt/LoT_ResNet'+randomhash+'CIFAR.pt', help='path to save the final model')
 args = parser.parse_args()
-print(json.dumps(vars(args), indent=4))
+#print(json.dumps(vars(args), indent=4))
 
 
 def main():
@@ -178,10 +178,10 @@ def main():
         print(args.depth_list)
         depth_list = [int(number) for number in args.depth_list.split('_')]
         print(depth_list)
-        # depth_list=''.join(char for char in str(args.depth_list) if char.isdigit())
-        # print(depth_list)
-        # depth_list=[int(depth_list[2*i:2*i+2]) for i in range(len(depth_list)//2)]
-        # print(depth_list)
+        depth_list=''.join(char for char in str(args.depth_list) if char.isdigit())
+        print(depth_list)
+        depth_list=[int(depth_list[2*i:2*i+2]) for i in range(len(depth_list)//2)]
+        print(depth_list)
         device = torch.device(f"cuda:{args.gpu}")
         torch.cuda.set_device(int(args.gpu))
         train_loader, test_loader = get_torch_dataset(args)
@@ -204,6 +204,25 @@ def main():
         total_params = sum(p.numel() for p in student.parameters())
         print(f"Total number of student parameters: {total_params:,}")
 
+
+
+
+        snapshot_dir = '/content/drive/MyDrive/LoT_snapshots/' + args.exp_name
+        os.makedirs(snapshot_dir, exist_ok=True)
+        print(f"Snapshots will be saved to: {snapshot_dir}")
+        
+        evaluate(teacher, student, test_loader, 0)
+        
+        # Сохраняем начальное состояние (эпоха 0)
+        torch.save({
+            'epoch': 0,
+            'teacher_state_dict': teacher.state_dict(),
+            'student_state_dict': student.state_dict(),
+        }, os.path.join(snapshot_dir, f'snapshot_epoch_0.pt'))
+
+
+
+
         print(f"==== train and evaluate unequal restart ====")
         if args.optimizer=='sgd':
             teacher_optimizer = torch.optim.SGD(lr=args.lr, weight_decay=args.weight_decay, momentum=0.9, nesterov=True, params=teacher.parameters())
@@ -215,6 +234,18 @@ def main():
         for epoch in range(1, args.epochs+1):
             train(teacher, student, train_loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler)
             evaluate(teacher, student, test_loader, epoch)
+
+
+            torch.save({
+                'epoch': epoch,
+                'teacher_state_dict': teacher.state_dict(),
+                'student_state_dict': student.state_dict(),
+            }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
+            
+            print(f"Snapshot saved: epoch {epoch}")
+
+
+
         torch.save(teacher.state_dict(), args.save+'_teacher.pt')
         torch.save(student.state_dict(), args.save+'_student.pt')
         print('ckpt location:', args.save)
