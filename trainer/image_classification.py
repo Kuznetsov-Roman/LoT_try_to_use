@@ -248,7 +248,6 @@ def main():
         'student_loss': student_loss
                         }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
     
-    print(f"Snapshot saved: epoch {epoch}")
 
 
 
