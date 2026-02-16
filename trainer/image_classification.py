@@ -225,7 +225,7 @@ def main():
         print(f"Total number of student parameters: {total_params:,}")
 
 
-
+        epoch = 0
 
         snapshot_dir = '/kaggle/working/snapshots/' + args.exp_name
         os.makedirs(snapshot_dir, exist_ok=True)
