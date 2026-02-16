@@ -56,6 +56,8 @@ def evaluate(teacher, student, loader, epoch):
     teacher_correct, student_correct = 0, 0
     total = 0
     start = time.time()
+
+
     for batch in loader:
         with torch.no_grad():
             inputs, targets = try_cuda(*batch[:2])
@@ -237,12 +239,16 @@ def main():
 
 
             torch.save({
-                'epoch': epoch,
-                'teacher_state_dict': teacher.state_dict(),
-                'student_state_dict': student.state_dict(),
-            }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
-            
-            print(f"Snapshot saved: epoch {epoch}")
+        'epoch': epoch,
+        'teacher_state_dict': teacher.state_dict(),
+        'student_state_dict': student.state_dict(),
+        'batch_inputs': batch_inputs,
+        'batch_targets': batch_targets,
+        'teacher_loss': teacher_loss,
+        'student_loss': student_loss
+                        }, os.path.join(snapshot_dir, f'snapshot_epoch_{epoch}.pt'))
+    
+    print(f"Snapshot saved: epoch {epoch}")
 
 
 
