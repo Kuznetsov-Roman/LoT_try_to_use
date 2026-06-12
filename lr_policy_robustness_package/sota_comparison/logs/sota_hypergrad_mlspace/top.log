@@ -1,0 +1,19 @@
+Fri May 15 13:03:38 MSK 2026
+name, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiB
+PHASE_START hypergrad_hb_safe_seeds123 2026-05-15T10:03:38Z
+RUN_DONE hypergrad_hb_safe_seed2_60ep exit=0 12:27:43
+RUN_DONE hypergrad_hb_safe_seed3_60ep exit=0 12:27:46
+RUN_DONE hypergrad_hb_safe_seed1_60ep exit=0 12:28:06
+PHASE_DONE hypergrad_hb_safe_seeds123 elapsed_sec=8668 2026-05-15T12:28:06Z
+PHASE_START hypergrad_hb_smooth_seeds123 2026-05-15T12:28:06Z
+RUN_DONE hypergrad_hb_smooth_seed2_60ep exit=0 14:52:12
+RUN_DONE hypergrad_hb_smooth_seed3_60ep exit=0 14:52:13
+RUN_DONE hypergrad_hb_smooth_seed1_60ep exit=0 14:52:17
+PHASE_DONE hypergrad_hb_smooth_seeds123 elapsed_sec=8651 2026-05-15T14:52:17Z
+PHASE_START hypergrad_hb_fast_seeds123 2026-05-15T14:52:17Z
+RUN_DONE hypergrad_hb_fast_seed3_60ep exit=0 17:16:35
+RUN_DONE hypergrad_hb_fast_seed1_60ep exit=0 17:16:40
+RUN_DONE hypergrad_hb_fast_seed2_60ep exit=0 17:17:07
+PHASE_DONE hypergrad_hb_fast_seeds123 elapsed_sec=8690 2026-05-15T17:17:07Z
+SOTA_HYPERGRAD_MLSPACE_DONE 2026-05-15T17:17:07Z

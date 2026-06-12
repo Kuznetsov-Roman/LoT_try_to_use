@@ -1,0 +1,155 @@
+Sun May 17 18:24:07 MSK 2026
+Sun May 17 18:24:07 MSK 2026
+namename, memory.total [MiB]
+, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiBNVIDIA A100-SXM4-80GB, 81920 MiB
+
+PHASE_START lblnoise010_seed1 2026-05-17T15:24:07Z
+PHASE_START lblnoise010_seed1 2026-05-17T15:24:07Z
+RUN_DONE cosine_lblnoise010_seed1_35ep exit=0 16:46:29
+RUN_DONE residgru_lblnoise010_seed1_35ep exit=0 16:46:31
+RUN_DONE patchtst_lblnoise010_seed1_35ep exit=0 16:46:31
+PHASE_DONE lblnoise010_seed1 elapsed_sec=4944 2026-05-17T16:46:31Z
+PHASE_DONE lblnoise010_seed1 elapsed_sec=4944 2026-05-17T16:46:31Z
+PHASE_START lblnoise020_seed1 2026-05-17T16:46:31Z
+PHASE_START lblnoise020_seed1 2026-05-17T16:46:31Z
+RUN_DONE cosine_lblnoise020_seed1_35ep exit=0 18:10:08
+RUN_DONE patchtst_lblnoise020_seed1_35ep exit=0 18:10:09
+RUN_DONE residgru_lblnoise020_seed1_35ep exit=0 18:10:18
+PHASE_DONE lblnoise020_seed1 elapsed_sec=5027 2026-05-17T18:10:18Z
+PHASE_DONE lblnoise020_seed1 elapsed_sec=5027 2026-05-17T18:10:18Z
+PHASE_START lblnoise030_seed1 2026-05-17T18:10:18Z
+PHASE_START lblnoise030_seed1 2026-05-17T18:10:18Z
+RUN_DONE patchtst_lblnoise030_seed1_35ep exit=0 19:33:30
+RUN_DONE cosine_lblnoise030_seed1_35ep exit=0 19:33:31
+RUN_DONE residgru_lblnoise030_seed1_35ep exit=0 19:33:39
+PHASE_DONE lblnoise030_seed1 elapsed_sec=5001 2026-05-17T19:33:39Z
+PHASE_DONE lblnoise030_seed1 elapsed_sec=5001 2026-05-17T19:33:39Z
+PHASE_START lblnoise010_seed2 2026-05-17T19:33:39Z
+PHASE_START lblnoise010_seed2 2026-05-17T19:33:39Z
+RUN_DONE patchtst_lblnoise010_seed2_35ep exit=0 20:56:20
+RUN_DONE cosine_lblnoise010_seed2_35ep exit=0 20:56:40
+RUN_DONE residgru_lblnoise010_seed2_35ep exit=0 20:56:43
+PHASE_DONE lblnoise010_seed2 elapsed_sec=4984 2026-05-17T20:56:43Z
+PHASE_DONE lblnoise010_seed2 elapsed_sec=4984 2026-05-17T20:56:43Z
+PHASE_START lblnoise020_seed2 2026-05-17T20:56:43Z
+PHASE_START lblnoise020_seed2 2026-05-17T20:56:43Z
+RUN_DONE cosine_lblnoise020_seed2_35ep exit=0 22:19:48
+RUN_DONE residgru_lblnoise020_seed2_35ep exit=0 22:20:01
+RUN_DONE patchtst_lblnoise020_seed2_35ep exit=0 22:20:02
+PHASE_DONE lblnoise020_seed2 elapsed_sec=4999 2026-05-17T22:20:02Z
+PHASE_DONE lblnoise020_seed2 elapsed_sec=4999 2026-05-17T22:20:02Z
+PHASE_START lblnoise030_seed2 2026-05-17T22:20:02Z
+PHASE_START lblnoise030_seed2 2026-05-17T22:20:02Z
+RUN_DONE cosine_lblnoise030_seed2_35ep exit=0 23:42:52
+RUN_DONE residgru_lblnoise030_seed2_35ep exit=0 23:43:04
+RUN_DONE patchtst_lblnoise030_seed2_35ep exit=0 23:43:07
+PHASE_DONE lblnoise030_seed2 elapsed_sec=4985 2026-05-17T23:43:07Z
+PHASE_DONE lblnoise030_seed2 elapsed_sec=4985 2026-05-17T23:43:07Z
+PHASE_START lblnoise010_seed3 2026-05-17T23:43:07Z
+PHASE_START lblnoise010_seed3 2026-05-17T23:43:07Z
+RUN_DONE residgru_lblnoise010_seed3_35ep exit=0 01:05:57
+RUN_DONE cosine_lblnoise010_seed3_35ep exit=0 01:05:58
+RUN_DONE patchtst_lblnoise010_seed3_35ep exit=0 01:05:58
+PHASE_DONE lblnoise010_seed3 elapsed_sec=4971 2026-05-18T01:05:58Z
+PHASE_DONE lblnoise010_seed3 elapsed_sec=4971 2026-05-18T01:05:58Z
+PHASE_START lblnoise020_seed3 2026-05-18T01:05:58Z
+PHASE_START lblnoise020_seed3 2026-05-18T01:05:58Z
+RUN_DONE cosine_lblnoise020_seed3_35ep exit=0 02:28:51
+RUN_DONE patchtst_lblnoise020_seed3_35ep exit=0 02:28:52
+RUN_DONE residgru_lblnoise020_seed3_35ep exit=0 02:28:52
+PHASE_DONE lblnoise020_seed3 elapsed_sec=4974 2026-05-18T02:28:52Z
+PHASE_DONE lblnoise020_seed3 elapsed_sec=4974 2026-05-18T02:28:52Z
+PHASE_START lblnoise030_seed3 2026-05-18T02:28:52Z
+PHASE_START lblnoise030_seed3 2026-05-18T02:28:52Z
+RUN_DONE patchtst_lblnoise030_seed3_35ep exit=0 03:51:16
+RUN_DONE cosine_lblnoise030_seed3_35ep exit=0 03:51:18
+RUN_DONE residgru_lblnoise030_seed3_35ep exit=0 03:51:18
+PHASE_DONE lblnoise030_seed3 elapsed_sec=4946 2026-05-18T03:51:18Z
+PHASE_DONE lblnoise030_seed3 elapsed_sec=4946 2026-05-18T03:51:18Z
+PHASE_START lblnoise010_seed4 2026-05-18T03:51:18Z
+PHASE_START lblnoise010_seed4 2026-05-18T03:51:18Z
+RUN_DONE cosine_lblnoise010_seed4_35ep exit=0 05:14:37
+RUN_DONE patchtst_lblnoise010_seed4_35ep exit=0 05:14:37
+RUN_DONE residgru_lblnoise010_seed4_35ep exit=0 05:14:41
+PHASE_DONE lblnoise010_seed4 elapsed_sec=5003 2026-05-18T05:14:41Z
+PHASE_DONE lblnoise010_seed4 elapsed_sec=5003 2026-05-18T05:14:41Z
+PHASE_START lblnoise020_seed4 2026-05-18T05:14:41Z
+PHASE_START lblnoise020_seed4 2026-05-18T05:14:41Z
+RUN_DONE patchtst_lblnoise020_seed4_35ep exit=0 06:37:43
+RUN_DONE cosine_lblnoise020_seed4_35ep exit=0 06:37:43
+RUN_DONE residgru_lblnoise020_seed4_35ep exit=0 06:37:46
+PHASE_DONE lblnoise020_seed4 elapsed_sec=4985 2026-05-18T06:37:46Z
+PHASE_DONE lblnoise020_seed4 elapsed_sec=4985 2026-05-18T06:37:46Z
+PHASE_START lblnoise030_seed4 2026-05-18T06:37:46Z
+PHASE_START lblnoise030_seed4 2026-05-18T06:37:46Z
+RUN_DONE cosine_lblnoise030_seed4_35ep exit=0 08:00:14
+RUN_DONE patchtst_lblnoise030_seed4_35ep exit=0 08:00:15
+RUN_DONE residgru_lblnoise030_seed4_35ep exit=0 08:00:20
+PHASE_DONE lblnoise030_seed4 elapsed_sec=4954 2026-05-18T08:00:20Z
+PHASE_DONE lblnoise030_seed4 elapsed_sec=4954 2026-05-18T08:00:20Z
+PHASE_START innoise005_seeds12_pair 2026-05-18T08:00:20Z
+PHASE_START innoise005_seeds12_pair 2026-05-18T08:00:20Z
+RUN_DONE patchtst_innoise005_seed1_35ep exit=0 09:25:11
+RUN_DONE cosine_innoise005_seed2_35ep exit=0 09:25:12
+RUN_DONE cosine_innoise005_seed1_35ep exit=0 09:25:12
+PHASE_DONE innoise005_seeds12_pair_A elapsed_sec=5092 2026-05-18T09:25:12Z
+PHASE_DONE innoise005_seeds12_pair_A elapsed_sec=5092 2026-05-18T09:25:12Z
+PHASE_START innoise005_seeds12_pair_B 2026-05-18T09:25:12Z
+PHASE_START innoise005_seeds12_pair_B 2026-05-18T09:25:12Z
+RUN_DONE patchtst_compound_seed1_35ep exit=0 10:48:31
+RUN_DONE cosine_compound_seed1_35ep exit=0 10:48:32
+RUN_DONE patchtst_innoise005_seed2_35ep exit=0 10:48:37
+PHASE_DONE innoise005_seeds12_pair_B elapsed_sec=5005 2026-05-18T10:48:37Z
+PHASE_DONE innoise005_seeds12_pair_B elapsed_sec=5005 2026-05-18T10:48:37Z
+PHASE_START innoise005_seeds34_pair 2026-05-18T10:48:37Z
+PHASE_START innoise005_seeds34_pair 2026-05-18T10:48:37Z
+RUN_DONE cosine_innoise005_seed4_35ep exit=0 12:14:14
+RUN_DONE cosine_innoise005_seed3_35ep exit=0 12:14:15
+RUN_DONE patchtst_innoise005_seed3_35ep exit=0 12:14:15
+PHASE_DONE innoise005_seeds34_pair_A elapsed_sec=5138 2026-05-18T12:14:15Z
+PHASE_DONE innoise005_seeds34_pair_A elapsed_sec=5138 2026-05-18T12:14:15Z
+PHASE_START innoise005_seeds34_pair_B 2026-05-18T12:14:15Z
+PHASE_START innoise005_seeds34_pair_B 2026-05-18T12:14:15Z
+RUN_DONE patchtst_compound_seed3_35ep exit=0 13:37:43
+RUN_DONE cosine_compound_seed3_35ep exit=0 13:37:43
+RUN_DONE patchtst_innoise005_seed4_35ep exit=0 13:38:06
+PHASE_DONE innoise005_seeds34_pair_B elapsed_sec=5031 2026-05-18T13:38:06Z
+PHASE_DONE innoise005_seeds34_pair_B elapsed_sec=5031 2026-05-18T13:38:06Z
+PHASE_START innoise015_seeds12_pair 2026-05-18T13:38:06Z
+PHASE_START innoise015_seeds12_pair 2026-05-18T13:38:06Z
+RUN_DONE cosine_innoise015_seed2_35ep exit=0 15:03:14
+RUN_DONE cosine_innoise015_seed1_35ep exit=0 15:03:14
+RUN_DONE patchtst_innoise015_seed1_35ep exit=0 15:03:15
+PHASE_DONE innoise015_seeds12_pair_A elapsed_sec=5109 2026-05-18T15:03:15Z
+PHASE_DONE innoise015_seeds12_pair_A elapsed_sec=5109 2026-05-18T15:03:15Z
+PHASE_START innoise015_seeds12_pair_B 2026-05-18T15:03:15Z
+PHASE_START innoise015_seeds12_pair_B 2026-05-18T15:03:15Z
+RUN_DONE cosine_compound_seed2_35ep exit=0 16:26:24
+RUN_DONE patchtst_compound_seed2_35ep exit=0 16:26:24
+RUN_DONE patchtst_innoise015_seed2_35ep exit=0 16:26:34
+PHASE_DONE innoise015_seeds12_pair_B elapsed_sec=4999 2026-05-18T16:26:34Z
+PHASE_DONE innoise015_seeds12_pair_B elapsed_sec=4999 2026-05-18T16:26:34Z
+PHASE_START innoise015_seeds34_pair 2026-05-18T16:26:34Z
+PHASE_START innoise015_seeds34_pair 2026-05-18T16:26:34Z
+RUN_DONE cosine_innoise015_seed4_35ep exit=0 17:52:04
+RUN_DONE patchtst_innoise015_seed3_35ep exit=0 17:52:13
+RUN_DONE cosine_innoise015_seed3_35ep exit=0 17:52:15
+PHASE_DONE innoise015_seeds34_pair_A elapsed_sec=5141 2026-05-18T17:52:15Z
+PHASE_DONE innoise015_seeds34_pair_A elapsed_sec=5141 2026-05-18T17:52:15Z
+PHASE_START innoise015_seeds34_pair_B 2026-05-18T17:52:15Z
+PHASE_START innoise015_seeds34_pair_B 2026-05-18T17:52:15Z
+RUN_DONE patchtst_compound_seed4_35ep exit=0 19:15:40
+RUN_DONE cosine_compound_seed4_35ep exit=0 19:15:41
+RUN_DONE patchtst_innoise015_seed4_35ep exit=0 19:15:54
+PHASE_DONE innoise015_seeds34_pair_B elapsed_sec=5019 2026-05-18T19:15:54Z
+PHASE_DONE innoise015_seeds34_pair_B elapsed_sec=5019 2026-05-18T19:15:54Z
+PHASE_START compound_residgru_extra 2026-05-18T19:15:54Z
+PHASE_START compound_residgru_extra 2026-05-18T19:15:54Z
+RUN_DONE residgru_compound_seed1_35ep exit=0 20:38:04
+RUN_DONE residgru_compound_seed2_35ep exit=0 20:38:19
+RUN_DONE residgru_compound_seed3_35ep exit=0 20:38:20
+PHASE_DONE compound_residgru_extra elapsed_sec=4946 2026-05-18T20:38:20Z
+PHASE_DONE compound_residgru_extra elapsed_sec=4946 2026-05-18T20:38:20Z
+ROBUST12H_INDUSTRY_DONE 2026-05-18T20:38:20Z
+ROBUST12H_INDUSTRY_DONE 2026-05-18T20:38:20Z

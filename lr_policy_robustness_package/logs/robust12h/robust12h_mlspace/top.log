@@ -1,0 +1,112 @@
+Sun May 17 18:26:35 MSK 2026
+Sun May 17 18:26:35 MSK 2026
+namename, memory.total [MiB]
+, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiB
+NVIDIA A100-SXM4-80GB, 81920 MiB
+PHASE_START O1_single_seeds1_band 2026-05-17T15:26:35Z
+PHASE_START O1_single_seeds1_band 2026-05-17T15:26:35Z
+RUN_DONE O1_patchtst_single_seed0_blend075_seed2_60ep exit=0 17:51:53
+RUN_DONE O1_patchtst_single_seed0_blend075_seed3_60ep exit=0 17:51:54
+RUN_DONE O1_patchtst_single_seed0_blend075_seed1_60ep exit=0 17:51:54
+PHASE_DONE O1_single_band elapsed_sec=8719 2026-05-17T17:51:54Z
+PHASE_DONE O1_single_band elapsed_sec=8719 2026-05-17T17:51:54Z
+PHASE_START O1_single_seeds4_band 2026-05-17T17:51:54Z
+PHASE_START O1_single_seeds4_band 2026-05-17T17:51:54Z
+RUN_DONE O1_patchtst_single_seed0_blend075_seed5_60ep exit=0 19:31:01
+RUN_DONE O1_patchtst_single_seed0_blend075_seed4_60ep exit=0 19:31:03
+PHASE_DONE O1_single_band elapsed_sec=5949 2026-05-17T19:31:03Z
+PHASE_DONE O1_single_band elapsed_sec=5949 2026-05-17T19:31:03Z
+PHASE_START O2_patchtst_seeds456 2026-05-17T19:31:03Z
+PHASE_START O2_patchtst_seeds456 2026-05-17T19:31:03Z
+RUN_DONE O2_patchtst_top5_blend075_seed5_60ep exit=0 21:55:28
+RUN_DONE O2_patchtst_top5_blend075_seed6_60ep exit=0 21:55:29
+RUN_DONE O2_patchtst_top5_blend075_seed4_60ep exit=0 21:55:29
+PHASE_DONE O2_patchtst_seeds_band elapsed_sec=8666 2026-05-17T21:55:29Z
+PHASE_DONE O2_patchtst_seeds_band elapsed_sec=8666 2026-05-17T21:55:29Z
+PHASE_START O2_patchtst_seeds789 2026-05-17T21:55:29Z
+PHASE_START O2_patchtst_seeds789 2026-05-17T21:55:29Z
+RUN_DONE O2_patchtst_top5_blend075_seed9_60ep exit=0 00:20:50
+RUN_DONE O2_patchtst_top5_blend075_seed8_60ep exit=0 00:20:51
+RUN_DONE O2_patchtst_top5_blend075_seed7_60ep exit=0 00:20:52
+PHASE_DONE O2_patchtst_seeds_band elapsed_sec=8723 2026-05-18T00:20:52Z
+PHASE_DONE O2_patchtst_seeds_band elapsed_sec=8723 2026-05-18T00:20:52Z
+PHASE_START O3_zero_mean_ema_seeds123 2026-05-18T00:20:52Z
+PHASE_START O3_zero_mean_ema_seeds123 2026-05-18T00:20:52Z
+RUN_DONE O3_patchtst_top5_zeromean09_blend075_seed3_60ep exit=0 02:45:16
+RUN_DONE O3_patchtst_top5_zeromean09_blend075_seed1_60ep exit=0 02:45:17
+RUN_DONE O3_patchtst_top5_zeromean09_blend075_seed2_60ep exit=0 02:45:17
+PHASE_DONE O3_zero_mean_ema_seeds123 elapsed_sec=8665 2026-05-18T02:45:17Z
+PHASE_DONE O3_zero_mean_ema_seeds123 elapsed_sec=8665 2026-05-18T02:45:17Z
+PHASE_START O4_sf_sgd_lr01 2026-05-18T02:45:17Z
+PHASE_START O4_sf_sgd_lr01 2026-05-18T02:45:17Z
+RUN_DONE O4_sf_sgd_lr01_seed1_35ep exit=0 04:09:40
+RUN_DONE O4_sf_sgd_lr01_seed2_35ep exit=0 04:09:40
+RUN_DONE O4_sf_sgd_lr03_seed3_35ep exit=0 04:09:41
+PHASE_DONE O4_sf_sgd_lr01 elapsed_sec=5064 2026-05-18T04:09:41Z
+PHASE_DONE O4_sf_sgd_lr01 elapsed_sec=5064 2026-05-18T04:09:41Z
+PHASE_START O4_sf_sgd_lr03 2026-05-18T04:09:41Z
+PHASE_START O4_sf_sgd_lr03 2026-05-18T04:09:41Z
+RUN_DONE O4_sf_sgd_lr07_seed3_35ep exit=0 05:34:22
+RUN_DONE O4_sf_sgd_lr03_seed1_35ep exit=0 05:34:23
+RUN_DONE O4_sf_sgd_lr03_seed2_35ep exit=0 05:34:23
+PHASE_DONE O4_sf_sgd_lr03 elapsed_sec=5082 2026-05-18T05:34:23Z
+PHASE_DONE O4_sf_sgd_lr03 elapsed_sec=5082 2026-05-18T05:34:23Z
+PHASE_START O4_sf_sgd_lr07 2026-05-18T05:34:23Z
+PHASE_START O4_sf_sgd_lr07 2026-05-18T05:34:23Z
+RUN_DONE O4_sf_sgd_lr10_seed3_35ep exit=0 06:59:07
+RUN_DONE O4_sf_sgd_lr07_seed2_35ep exit=0 06:59:11
+RUN_DONE O4_sf_sgd_lr07_seed1_35ep exit=0 06:59:12
+PHASE_DONE O4_sf_sgd_lr07 elapsed_sec=5089 2026-05-18T06:59:12Z
+PHASE_DONE O4_sf_sgd_lr07 elapsed_sec=5089 2026-05-18T06:59:12Z
+PHASE_START O4_sf_sgd_lr10 2026-05-18T06:59:12Z
+PHASE_START O4_sf_sgd_lr10 2026-05-18T06:59:12Z
+RUN_DONE O4_sf_sgd_lr10_seed1_35ep exit=0 08:23:33
+RUN_DONE O4_sf_sgd_lr10_seed2_35ep exit=0 08:23:34
+RUN_DONE O4_sf_sgd_lr01_seed3_35ep exit=0 08:23:35
+PHASE_DONE O4_sf_sgd_lr10 elapsed_sec=5063 2026-05-18T08:23:35Z
+PHASE_DONE O4_sf_sgd_lr10 elapsed_sec=5063 2026-05-18T08:23:35Z
+PHASE_START O5_noise_onset_seeds12 2026-05-18T08:23:35Z
+PHASE_START O5_noise_onset_seeds12 2026-05-18T08:23:35Z
+RUN_DONE O5_patchtst_noiseon15_seed1_35ep exit=0 09:48:14
+RUN_DONE O5_cosine_noiseon15_seed1_35ep exit=0 09:48:15
+RUN_DONE O5_cosine_noiseon15_seed2_35ep exit=0 09:48:16
+PHASE_DONE O5_noise_onset_seeds12_A elapsed_sec=5081 2026-05-18T09:48:16Z
+PHASE_DONE O5_noise_onset_seeds12_A elapsed_sec=5081 2026-05-18T09:48:16Z
+PHASE_START O5_noise_onset_seeds12_B 2026-05-18T09:48:16Z
+PHASE_START O5_noise_onset_seeds12_B 2026-05-18T09:48:16Z
+RUN_DONE O5_patchtst_noiseon15_seed2_35ep exit=0 11:11:35
+RUN_DONE O6_patchtst_long90_seed1_90ep exit=0 12:41:35
+RUN_DONE O6_cosine_long90_seed1_90ep exit=0 12:41:35
+PHASE_DONE O5_noise_onset_seeds12_B elapsed_sec=10399 2026-05-18T12:41:35Z
+PHASE_DONE O5_noise_onset_seeds12_B elapsed_sec=10399 2026-05-18T12:41:35Z
+PHASE_START O5_noise_onset_seeds34 2026-05-18T12:41:35Z
+PHASE_START O5_noise_onset_seeds34 2026-05-18T12:41:35Z
+RUN_DONE O5_patchtst_noiseon15_seed3_35ep exit=0 14:06:42
+RUN_DONE O5_cosine_noiseon15_seed3_35ep exit=0 14:06:42
+RUN_DONE O5_cosine_noiseon15_seed4_35ep exit=0 14:06:43
+PHASE_DONE O5_noise_onset_seeds34_A elapsed_sec=5108 2026-05-18T14:06:43Z
+PHASE_DONE O5_noise_onset_seeds34_A elapsed_sec=5108 2026-05-18T14:06:43Z
+PHASE_START O5_noise_onset_seeds34_B 2026-05-18T14:06:43Z
+PHASE_START O5_noise_onset_seeds34_B 2026-05-18T14:06:43Z
+RUN_DONE O5_patchtst_noiseon15_seed4_35ep exit=0 15:31:19
+RUN_DONE O6_cosine_long90_seed3_90ep exit=0 17:01:57
+RUN_DONE O6_patchtst_long90_seed3_90ep exit=0 17:02:16
+PHASE_DONE O5_noise_onset_seeds34_B elapsed_sec=10533 2026-05-18T17:02:16Z
+PHASE_DONE O5_noise_onset_seeds34_B elapsed_sec=10533 2026-05-18T17:02:16Z
+PHASE_START O6_long90_band1 2026-05-18T17:02:16Z
+PHASE_START O6_long90_band1 2026-05-18T17:02:16Z
+RUN_DONE O6_patchtst_long90_seed2_90ep exit=0 20:42:01
+RUN_DONE O6_cosine_long90_seed2_90ep exit=0 20:42:22
+RUN_DONE O6_cosine_long90_seed4_90ep exit=0 20:42:23
+PHASE_DONE O6_long90_band1 elapsed_sec=13207 2026-05-18T20:42:23Z
+PHASE_DONE O6_long90_band1 elapsed_sec=13207 2026-05-18T20:42:23Z
+PHASE_START O6_long90_band2 2026-05-18T20:42:23Z
+PHASE_START O6_long90_band2 2026-05-18T20:42:23Z
+RUN_DONE O6_cosine_long90_seed5_90ep exit=0 00:18:51
+RUN_DONE O6_patchtst_long90_seed5_90ep exit=0 00:18:52
+RUN_DONE O6_patchtst_long90_seed4_90ep exit=0 00:18:53
+PHASE_DONE O6_long90_band2 elapsed_sec=12990 2026-05-19T00:18:53Z
+PHASE_DONE O6_long90_band2 elapsed_sec=12990 2026-05-19T00:18:53Z
+ROBUST12H_MLSPACE_DONE 2026-05-19T00:18:53Z
+ROBUST12H_MLSPACE_DONE 2026-05-19T00:18:53Z

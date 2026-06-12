@@ -1,0 +1,254 @@
+/home/jovyan/.mlspace/envs/egy_llm/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+depth_list: [110, 20]
+Dataset information: cifar100	 50000 images for training 	 10000 images for testing	
+teacher depth: 110
+student depth: 20
+Total number of teacher parameters: 1,169,972
+Total number of student parameters: 278,132
+Snapshots will be saved to: snapshots/sota_adalrs_stars/adalrs_default_seed1_60ep
+==== train and evaluate unequal restart ====
+[scheduler] AdaLRS active init_lr=0.01 alpha=0.5 beta=1.5 margin=0.002 clamp=0.7
+[Eval] Epoch: 0 | Teacher Test Loss: 12407.062 | Teacher Test Acc: 0.990 | Student Test Loss: 7.984 | Student Test Acc: 1.020 | Teacher Test F1: 0.000 | Student Test F1: 0.000 | Teacher Top 5 Accuracy: 0.050 | Student Top 5 Accuracy: 0.046 | Time: 2.930 | 
+Running student landscape probe...
+[Train] Epoch: 1 | Teacher lr=1.0000 | Teacher Loss: 4.026 | Teacher Train Acc: 9.646 | Student lr=0.0100 | Student Train Acc: 7.022 | Time: 140.321 |
+[Eval] Epoch: 1 | Teacher Test Loss: 3.673 | Teacher Test Acc: 13.020 | Student Test Loss: 3.810 | Student Test Acc: 11.110 | Teacher Test F1: 0.102 | Student Test F1: 0.073 | Teacher Top 5 Accuracy: 0.370 | Student Top 5 Accuracy: 0.316 | Time: 2.486 | 
+Running student landscape probe...
+[adalrs] epoch=1 decision=warmup_cosine best_lr=0.999315 cosine_lr=0.999315 improvement=0.000000 next_student_lr=0.999315
+[Train] Epoch: 2 | Teacher lr=0.9993 | Teacher Loss: 3.392 | Teacher Train Acc: 21.336 | Student lr=0.9993 | Student Train Acc: 19.514 | Time: 136.639 |
+[Eval] Epoch: 2 | Teacher Test Loss: 3.336 | Teacher Test Acc: 20.080 | Student Test Loss: 3.010 | Student Test Acc: 25.630 | Teacher Test F1: 0.179 | Student Test F1: 0.235 | Teacher Top 5 Accuracy: 0.487 | Student Top 5 Accuracy: 0.563 | Time: 2.341 | 
+Running student landscape probe...
+[adalrs] epoch=2 decision=warmup_cosine best_lr=0.997264 cosine_lr=0.997264 improvement=0.000000 next_student_lr=0.997264
+[Train] Epoch: 3 | Teacher lr=0.9973 | Teacher Loss: 2.828 | Teacher Train Acc: 32.356 | Student lr=0.9973 | Student Train Acc: 40.278 | Time: 139.400 |
+[Eval] Epoch: 3 | Teacher Test Loss: 2.677 | Teacher Test Acc: 31.150 | Student Test Loss: 2.508 | Student Test Acc: 34.500 | Teacher Test F1: 0.293 | Student Test F1: 0.335 | Teacher Top 5 Accuracy: 0.649 | Student Top 5 Accuracy: 0.678 | Time: 2.426 | 
+Running student landscape probe...
+[adalrs] epoch=3 decision=warmup_cosine best_lr=0.993850 cosine_lr=0.993850 improvement=0.000000 next_student_lr=0.993850
+[Train] Epoch: 4 | Teacher lr=0.9938 | Teacher Loss: 2.801 | Teacher Train Acc: 35.006 | Student lr=0.9939 | Student Train Acc: 47.606 | Time: 135.898 |
+[Eval] Epoch: 4 | Teacher Test Loss: 2.413 | Teacher Test Acc: 36.150 | Student Test Loss: 3.369 | Student Test Acc: 23.960 | Teacher Test F1: 0.344 | Student Test F1: 0.219 | Teacher Top 5 Accuracy: 0.704 | Student Top 5 Accuracy: 0.517 | Time: 2.250 | 
+Running student landscape probe...
+[adalrs] epoch=4 decision=warmup_cosine best_lr=0.989085 cosine_lr=0.989085 improvement=0.000000 next_student_lr=0.989085
+[Train] Epoch: 5 | Teacher lr=0.9891 | Teacher Loss: 2.304 | Teacher Train Acc: 44.790 | Student lr=0.9891 | Student Train Acc: 51.152 | Time: 135.975 |
+[Eval] Epoch: 5 | Teacher Test Loss: 2.282 | Teacher Test Acc: 39.660 | Student Test Loss: 2.084 | Student Test Acc: 44.050 | Teacher Test F1: 0.379 | Student Test F1: 0.426 | Teacher Top 5 Accuracy: 0.726 | Student Top 5 Accuracy: 0.760 | Time: 2.257 | 
+Running student landscape probe...
+[adalrs] epoch=5 decision=warmup_cosine best_lr=0.982980 cosine_lr=0.982980 improvement=0.000000 next_student_lr=0.982980
+[Train] Epoch: 6 | Teacher lr=0.9830 | Teacher Loss: 2.193 | Teacher Train Acc: 47.904 | Student lr=0.9830 | Student Train Acc: 53.042 | Time: 136.121 |
+[Eval] Epoch: 6 | Teacher Test Loss: 2.087 | Teacher Test Acc: 44.150 | Student Test Loss: 2.263 | Student Test Acc: 40.340 | Teacher Test F1: 0.444 | Student Test F1: 0.393 | Teacher Top 5 Accuracy: 0.763 | Student Top 5 Accuracy: 0.723 | Time: 2.185 | 
+Running student landscape probe...
+[adalrs] epoch=6 decision=accept_probe best_lr=1.400000 cosine_lr=0.975553 improvement=0.014771 next_student_lr=1.400000
+[Train] Epoch: 7 | Teacher lr=0.9755 | Teacher Loss: 2.092 | Teacher Train Acc: 51.112 | Student lr=1.4000 | Student Train Acc: 52.110 | Time: 136.212 |
+[Eval] Epoch: 7 | Teacher Test Loss: 2.069 | Teacher Test Acc: 44.160 | Student Test Loss: 2.473 | Student Test Acc: 36.850 | Teacher Test F1: 0.429 | Student Test F1: 0.358 | Teacher Top 5 Accuracy: 0.772 | Student Top 5 Accuracy: 0.697 | Time: 2.182 | 
+Running student landscape probe...
+[adalrs] epoch=7 decision=rising_loss_clamp best_lr=1.400000 cosine_lr=0.966823 improvement=0.020783 next_student_lr=0.676776
+[Train] Epoch: 8 | Teacher lr=0.9668 | Teacher Loss: 1.991 | Teacher Train Acc: 52.346 | Student lr=0.6768 | Student Train Acc: 58.748 | Time: 137.722 |
+[Eval] Epoch: 8 | Teacher Test Loss: 2.212 | Teacher Test Acc: 42.510 | Student Test Loss: 1.973 | Student Test Acc: 46.670 | Teacher Test F1: 0.417 | Student Test F1: 0.463 | Teacher Top 5 Accuracy: 0.747 | Student Top 5 Accuracy: 0.784 | Time: 2.295 | 
+Running student landscape probe...
+[adalrs] epoch=8 decision=accept_probe best_lr=1.400000 cosine_lr=0.956816 improvement=0.006546 next_student_lr=1.400000
+[Train] Epoch: 9 | Teacher lr=0.9568 | Teacher Loss: 1.970 | Teacher Train Acc: 54.780 | Student lr=1.4000 | Student Train Acc: 52.138 | Time: 137.048 |
+[Eval] Epoch: 9 | Teacher Test Loss: 2.341 | Teacher Test Acc: 39.150 | Student Test Loss: 3.489 | Student Test Acc: 21.120 | Teacher Test F1: 0.384 | Student Test F1: 0.200 | Teacher Top 5 Accuracy: 0.721 | Student Top 5 Accuracy: 0.528 | Time: 2.342 | 
+Running student landscape probe...
+[adalrs] epoch=9 decision=accept_probe best_lr=1.400000 cosine_lr=0.945558 improvement=0.040665 next_student_lr=1.400000
+[Train] Epoch: 10 | Teacher lr=0.9455 | Teacher Loss: 2.180 | Teacher Train Acc: 50.016 | Student lr=1.4000 | Student Train Acc: 54.226 | Time: 137.123 |
+[Eval] Epoch: 10 | Teacher Test Loss: 1.850 | Teacher Test Acc: 48.540 | Student Test Loss: 2.359 | Student Test Acc: 37.710 | Teacher Test F1: 0.477 | Student Test F1: 0.370 | Teacher Top 5 Accuracy: 0.809 | Student Top 5 Accuracy: 0.727 | Time: 2.437 | 
+Running student landscape probe...
+[adalrs] epoch=10 decision=accept_probe best_lr=1.300000 cosine_lr=0.933080 improvement=0.031190 next_student_lr=1.300000
+[Train] Epoch: 11 | Teacher lr=0.9330 | Teacher Loss: 1.834 | Teacher Train Acc: 57.506 | Student lr=1.3000 | Student Train Acc: 55.304 | Time: 137.980 |
+[Eval] Epoch: 11 | Teacher Test Loss: 1.876 | Teacher Test Acc: 49.470 | Student Test Loss: 2.365 | Student Test Acc: 39.540 | Teacher Test F1: 0.497 | Student Test F1: 0.385 | Teacher Top 5 Accuracy: 0.807 | Student Top 5 Accuracy: 0.718 | Time: 2.407 | 
+Running student landscape probe...
+[adalrs] epoch=11 decision=accept_probe best_lr=1.300000 cosine_lr=0.919416 improvement=0.025170 next_student_lr=1.300000
+[Train] Epoch: 12 | Teacher lr=0.9193 | Teacher Loss: 1.801 | Teacher Train Acc: 58.438 | Student lr=1.3000 | Student Train Acc: 56.244 | Time: 137.201 |
+[Eval] Epoch: 12 | Teacher Test Loss: 1.701 | Teacher Test Acc: 53.050 | Student Test Loss: 2.296 | Student Test Acc: 40.110 | Teacher Test F1: 0.525 | Student Test F1: 0.402 | Teacher Top 5 Accuracy: 0.835 | Student Top 5 Accuracy: 0.733 | Time: 2.509 | 
+Running student landscape probe...
+[adalrs] epoch=12 decision=accept_probe best_lr=1.300000 cosine_lr=0.904604 improvement=0.023496 next_student_lr=1.300000
+[Train] Epoch: 13 | Teacher lr=0.9045 | Teacher Loss: 1.769 | Teacher Train Acc: 59.354 | Student lr=1.3000 | Student Train Acc: 56.426 | Time: 138.072 |
+[Eval] Epoch: 13 | Teacher Test Loss: 1.849 | Teacher Test Acc: 49.300 | Student Test Loss: 2.310 | Student Test Acc: 41.720 | Teacher Test F1: 0.482 | Student Test F1: 0.412 | Teacher Top 5 Accuracy: 0.802 | Student Top 5 Accuracy: 0.746 | Time: 2.322 | 
+Running student landscape probe...
+[adalrs] epoch=13 decision=accept_probe best_lr=1.300000 cosine_lr=0.888684 improvement=0.023513 next_student_lr=1.300000
+[Train] Epoch: 14 | Teacher lr=0.8886 | Teacher Loss: 1.745 | Teacher Train Acc: 60.220 | Student lr=1.3000 | Student Train Acc: 56.560 | Time: 137.390 |
+[Eval] Epoch: 14 | Teacher Test Loss: 1.639 | Teacher Test Acc: 53.720 | Student Test Loss: 3.058 | Student Test Acc: 28.660 | Teacher Test F1: 0.532 | Student Test F1: 0.277 | Teacher Top 5 Accuracy: 0.845 | Student Top 5 Accuracy: 0.634 | Time: 2.467 | 
+Running student landscape probe...
+[adalrs] epoch=14 decision=rising_loss_clamp best_lr=1.300000 cosine_lr=0.871701 improvement=0.021046 next_student_lr=0.610191
+[Train] Epoch: 15 | Teacher lr=0.8716 | Teacher Loss: 1.660 | Teacher Train Acc: 60.676 | Student lr=0.6102 | Student Train Acc: 62.744 | Time: 137.238 |
+[Eval] Epoch: 15 | Teacher Test Loss: 1.857 | Teacher Test Acc: 50.210 | Student Test Loss: 1.906 | Student Test Acc: 48.650 | Teacher Test F1: 0.497 | Student Test F1: 0.475 | Teacher Top 5 Accuracy: 0.802 | Student Top 5 Accuracy: 0.795 | Time: 2.343 | 
+Running student landscape probe...
+[adalrs] epoch=15 decision=accept_probe best_lr=1.200000 cosine_lr=0.853700 improvement=0.024622 next_student_lr=1.200000
+[Train] Epoch: 16 | Teacher lr=0.8536 | Teacher Loss: 1.681 | Teacher Train Acc: 62.392 | Student lr=1.2000 | Student Train Acc: 57.478 | Time: 137.544 |
+[Eval] Epoch: 16 | Teacher Test Loss: 1.622 | Teacher Test Acc: 55.260 | Student Test Loss: 2.598 | Student Test Acc: 38.420 | Teacher Test F1: 0.553 | Student Test F1: 0.387 | Teacher Top 5 Accuracy: 0.841 | Student Top 5 Accuracy: 0.708 | Time: 2.382 | 
+Running student landscape probe...
+[adalrs] epoch=16 decision=accept_probe best_lr=1.200000 cosine_lr=0.834731 improvement=0.038027 next_student_lr=1.200000
+[Train] Epoch: 17 | Teacher lr=0.8346 | Teacher Loss: 1.650 | Teacher Train Acc: 63.374 | Student lr=1.2000 | Student Train Acc: 58.198 | Time: 137.394 |
+[Eval] Epoch: 17 | Teacher Test Loss: 1.834 | Teacher Test Acc: 49.860 | Student Test Loss: 2.629 | Student Test Acc: 35.310 | Teacher Test F1: 0.492 | Student Test F1: 0.345 | Teacher Top 5 Accuracy: 0.806 | Student Top 5 Accuracy: 0.658 | Time: 2.343 | 
+Running student landscape probe...
+[adalrs] epoch=17 decision=rising_loss_clamp best_lr=1.200000 cosine_lr=0.814846 improvement=0.030780 next_student_lr=0.570392
+[Train] Epoch: 18 | Teacher lr=0.8147 | Teacher Loss: 1.892 | Teacher Train Acc: 56.622 | Student lr=0.5704 | Student Train Acc: 63.832 | Time: 138.557 |
+[Eval] Epoch: 18 | Teacher Test Loss: 1.627 | Teacher Test Acc: 56.000 | Student Test Loss: 1.967 | Student Test Acc: 47.730 | Teacher Test F1: 0.557 | Student Test F1: 0.471 | Teacher Top 5 Accuracy: 0.845 | Student Top 5 Accuracy: 0.789 | Time: 2.337 | 
+Running student landscape probe...
+[adalrs] epoch=18 decision=accept_probe best_lr=1.100000 cosine_lr=0.794099 improvement=0.016755 next_student_lr=1.100000
+[Train] Epoch: 19 | Teacher lr=0.7939 | Teacher Loss: 1.618 | Teacher Train Acc: 64.006 | Student lr=1.1000 | Student Train Acc: 58.666 | Time: 137.726 |
+[Eval] Epoch: 19 | Teacher Test Loss: 1.531 | Teacher Test Acc: 57.530 | Student Test Loss: 2.337 | Student Test Acc: 40.260 | Teacher Test F1: 0.569 | Student Test F1: 0.391 | Teacher Top 5 Accuracy: 0.860 | Student Top 5 Accuracy: 0.729 | Time: 2.349 | 
+Running student landscape probe...
+[adalrs] epoch=19 decision=accept_probe best_lr=1.100000 cosine_lr=0.772547 improvement=0.030222 next_student_lr=1.100000
+[Train] Epoch: 20 | Teacher lr=0.7723 | Teacher Loss: 1.574 | Teacher Train Acc: 65.210 | Student lr=1.1000 | Student Train Acc: 59.408 | Time: 138.048 |
+[Eval] Epoch: 20 | Teacher Test Loss: 1.618 | Teacher Test Acc: 54.560 | Student Test Loss: 2.643 | Student Test Acc: 37.290 | Teacher Test F1: 0.543 | Student Test F1: 0.369 | Teacher Top 5 Accuracy: 0.847 | Student Top 5 Accuracy: 0.680 | Time: 2.254 | 
+Running student landscape probe...
+[adalrs] epoch=20 decision=rising_loss_clamp best_lr=1.100000 cosine_lr=0.750250 improvement=0.037742 next_student_lr=0.525175
+[Train] Epoch: 21 | Teacher lr=0.7500 | Teacher Loss: 1.504 | Teacher Train Acc: 65.188 | Student lr=0.5252 | Student Train Acc: 64.912 | Time: 136.119 |
+[Eval] Epoch: 21 | Teacher Test Loss: 1.780 | Teacher Test Acc: 51.830 | Student Test Loss: 1.880 | Student Test Acc: 50.050 | Teacher Test F1: 0.515 | Student Test F1: 0.499 | Teacher Top 5 Accuracy: 0.820 | Student Top 5 Accuracy: 0.801 | Time: 2.446 | 
+Running student landscape probe...
+[adalrs] epoch=21 decision=accept_probe best_lr=1.000000 cosine_lr=0.727268 improvement=0.028984 next_student_lr=1.000000
+[Train] Epoch: 22 | Teacher lr=0.7270 | Teacher Loss: 1.544 | Teacher Train Acc: 66.182 | Student lr=1.0000 | Student Train Acc: 59.652 | Time: 135.652 |
+[Eval] Epoch: 22 | Teacher Test Loss: 1.507 | Teacher Test Acc: 57.600 | Student Test Loss: 2.023 | Student Test Acc: 45.940 | Teacher Test F1: 0.575 | Student Test F1: 0.455 | Teacher Top 5 Accuracy: 0.857 | Student Top 5 Accuracy: 0.773 | Time: 2.483 | 
+Running student landscape probe...
+[adalrs] epoch=22 decision=accept_probe best_lr=1.000000 cosine_lr=0.703665 improvement=0.030112 next_student_lr=1.000000
+[Train] Epoch: 23 | Teacher lr=0.7034 | Teacher Loss: 1.510 | Teacher Train Acc: 66.984 | Student lr=1.0000 | Student Train Acc: 60.584 | Time: 136.695 |
+[Eval] Epoch: 23 | Teacher Test Loss: 1.526 | Teacher Test Acc: 57.080 | Student Test Loss: 2.363 | Student Test Acc: 40.050 | Teacher Test F1: 0.570 | Student Test F1: 0.403 | Teacher Top 5 Accuracy: 0.855 | Student Top 5 Accuracy: 0.735 | Time: 2.402 | 
+Running student landscape probe...
+[adalrs] epoch=23 decision=rising_loss_clamp best_lr=1.000000 cosine_lr=0.679505 improvement=0.031806 next_student_lr=0.475653
+[Train] Epoch: 24 | Teacher lr=0.6792 | Teacher Loss: 1.432 | Teacher Train Acc: 67.120 | Student lr=0.4757 | Student Train Acc: 66.144 | Time: 136.949 |
+[Eval] Epoch: 24 | Teacher Test Loss: 1.427 | Teacher Test Acc: 59.720 | Student Test Loss: 1.637 | Student Test Acc: 54.780 | Teacher Test F1: 0.597 | Student Test F1: 0.549 | Teacher Top 5 Accuracy: 0.871 | Student Top 5 Accuracy: 0.840 | Time: 2.339 | 
+Running student landscape probe...
+[adalrs] epoch=24 decision=accept_probe best_lr=0.900000 cosine_lr=0.654854 improvement=0.015499 next_student_lr=0.900000
+[Train] Epoch: 25 | Teacher lr=0.6545 | Teacher Loss: 1.467 | Teacher Train Acc: 68.198 | Student lr=0.9000 | Student Train Acc: 60.966 | Time: 135.266 |
+[Eval] Epoch: 25 | Teacher Test Loss: 1.541 | Teacher Test Acc: 56.870 | Student Test Loss: 2.234 | Student Test Acc: 43.120 | Teacher Test F1: 0.567 | Student Test F1: 0.430 | Teacher Top 5 Accuracy: 0.856 | Student Top 5 Accuracy: 0.744 | Time: 2.328 | 
+Running student landscape probe...
+[adalrs] epoch=25 decision=accept_probe best_lr=0.900000 cosine_lr=0.629780 improvement=0.032081 next_student_lr=0.900000
+[Train] Epoch: 26 | Teacher lr=0.6294 | Teacher Loss: 1.439 | Teacher Train Acc: 68.762 | Student lr=0.9000 | Student Train Acc: 61.330 | Time: 138.762 |
+[Eval] Epoch: 26 | Teacher Test Loss: 1.417 | Teacher Test Acc: 60.110 | Student Test Loss: 1.973 | Student Test Acc: 47.190 | Teacher Test F1: 0.600 | Student Test F1: 0.467 | Teacher Top 5 Accuracy: 0.871 | Student Top 5 Accuracy: 0.788 | Time: 2.382 | 
+Running student landscape probe...
+[adalrs] epoch=26 decision=accept_probe best_lr=0.900000 cosine_lr=0.604352 improvement=0.033712 next_student_lr=0.900000
+[Train] Epoch: 27 | Teacher lr=0.6040 | Teacher Loss: 1.426 | Teacher Train Acc: 69.086 | Student lr=0.9000 | Student Train Acc: 61.748 | Time: 138.354 |
+[Eval] Epoch: 27 | Teacher Test Loss: 1.285 | Teacher Test Acc: 63.510 | Student Test Loss: 3.489 | Student Test Acc: 25.980 | Teacher Test F1: 0.636 | Student Test F1: 0.256 | Teacher Top 5 Accuracy: 0.893 | Student Top 5 Accuracy: 0.546 | Time: 2.169 | 
+Running student landscape probe...
+[adalrs] epoch=27 decision=accept_probe best_lr=0.800000 cosine_lr=0.578639 improvement=0.027193 next_student_lr=0.800000
+[Train] Epoch: 28 | Teacher lr=0.5782 | Teacher Loss: 1.392 | Teacher Train Acc: 70.062 | Student lr=0.8000 | Student Train Acc: 63.122 | Time: 137.304 |
+[Eval] Epoch: 28 | Teacher Test Loss: 1.406 | Teacher Test Acc: 59.700 | Student Test Loss: 1.903 | Student Test Acc: 48.690 | Teacher Test F1: 0.597 | Student Test F1: 0.483 | Teacher Top 5 Accuracy: 0.873 | Student Top 5 Accuracy: 0.797 | Time: 2.512 | 
+Running student landscape probe...
+[adalrs] epoch=28 decision=accept_probe best_lr=0.800000 cosine_lr=0.552712 improvement=0.024570 next_student_lr=0.800000
+[Train] Epoch: 29 | Teacher lr=0.5523 | Teacher Loss: 1.373 | Teacher Train Acc: 70.808 | Student lr=0.8000 | Student Train Acc: 62.748 | Time: 138.182 |
+[Eval] Epoch: 29 | Teacher Test Loss: 1.358 | Teacher Test Acc: 61.920 | Student Test Loss: 1.948 | Student Test Acc: 47.930 | Teacher Test F1: 0.619 | Student Test F1: 0.480 | Teacher Top 5 Accuracy: 0.884 | Student Top 5 Accuracy: 0.792 | Time: 2.429 | 
+Running student landscape probe...
+[adalrs] epoch=29 decision=accept_probe best_lr=0.700000 cosine_lr=0.526642 improvement=0.017026 next_student_lr=0.700000
+[Train] Epoch: 30 | Teacher lr=0.5262 | Teacher Loss: 1.340 | Teacher Train Acc: 71.288 | Student lr=0.7000 | Student Train Acc: 64.192 | Time: 136.640 |
+[Eval] Epoch: 30 | Teacher Test Loss: 1.355 | Teacher Test Acc: 61.190 | Student Test Loss: 1.930 | Student Test Acc: 47.630 | Teacher Test F1: 0.615 | Student Test F1: 0.474 | Teacher Top 5 Accuracy: 0.886 | Student Top 5 Accuracy: 0.790 | Time: 2.429 | 
+Running student landscape probe...
+[adalrs] epoch=30 decision=accept_probe best_lr=0.700000 cosine_lr=0.500500 improvement=0.026843 next_student_lr=0.700000
+[Train] Epoch: 31 | Teacher lr=0.5000 | Teacher Loss: 1.327 | Teacher Train Acc: 71.844 | Student lr=0.7000 | Student Train Acc: 64.112 | Time: 138.552 |
+[Eval] Epoch: 31 | Teacher Test Loss: 1.547 | Teacher Test Acc: 57.220 | Student Test Loss: 1.982 | Student Test Acc: 46.880 | Teacher Test F1: 0.567 | Student Test F1: 0.463 | Teacher Top 5 Accuracy: 0.848 | Student Top 5 Accuracy: 0.782 | Time: 2.459 | 
+Running student landscape probe...
+[adalrs] epoch=31 decision=accept_probe best_lr=0.700000 cosine_lr=0.474358 improvement=0.019587 next_student_lr=0.700000
+[Train] Epoch: 32 | Teacher lr=0.4738 | Teacher Loss: 1.300 | Teacher Train Acc: 72.992 | Student lr=0.7000 | Student Train Acc: 64.048 | Time: 134.719 |
+[Eval] Epoch: 32 | Teacher Test Loss: 1.352 | Teacher Test Acc: 61.900 | Student Test Loss: 2.245 | Student Test Acc: 43.420 | Teacher Test F1: 0.619 | Student Test F1: 0.438 | Teacher Top 5 Accuracy: 0.882 | Student Top 5 Accuracy: 0.758 | Time: 2.401 | 
+Running student landscape probe...
+[adalrs] epoch=32 decision=rising_loss_clamp best_lr=0.600000 cosine_lr=0.448288 improvement=0.034872 next_student_lr=0.313802
+[Train] Epoch: 33 | Teacher lr=0.4477 | Teacher Loss: 1.208 | Teacher Train Acc: 73.304 | Student lr=0.3138 | Student Train Acc: 69.928 | Time: 137.732 |
+[Eval] Epoch: 33 | Teacher Test Loss: 1.346 | Teacher Test Acc: 61.680 | Student Test Loss: 1.508 | Student Test Acc: 57.720 | Teacher Test F1: 0.617 | Student Test F1: 0.579 | Teacher Top 5 Accuracy: 0.884 | Student Top 5 Accuracy: 0.859 | Time: 2.428 | 
+Running student landscape probe...
+[adalrs] epoch=33 decision=accept_probe best_lr=0.600000 cosine_lr=0.422361 improvement=0.030458 next_student_lr=0.600000
+[Train] Epoch: 34 | Teacher lr=0.4218 | Teacher Loss: 1.256 | Teacher Train Acc: 74.194 | Student lr=0.6000 | Student Train Acc: 64.838 | Time: 137.663 |
+[Eval] Epoch: 34 | Teacher Test Loss: 1.254 | Teacher Test Acc: 64.500 | Student Test Loss: 2.007 | Student Test Acc: 47.720 | Teacher Test F1: 0.641 | Student Test F1: 0.473 | Teacher Top 5 Accuracy: 0.897 | Student Top 5 Accuracy: 0.783 | Time: 2.543 | 
+Running student landscape probe...
+[adalrs] epoch=34 decision=accept_probe best_lr=0.500000 cosine_lr=0.396648 improvement=0.012666 next_student_lr=0.500000
+[Train] Epoch: 35 | Teacher lr=0.3960 | Teacher Loss: 1.193 | Teacher Train Acc: 75.436 | Student lr=0.5000 | Student Train Acc: 66.844 | Time: 135.957 |
+[Eval] Epoch: 35 | Teacher Test Loss: 1.252 | Teacher Test Acc: 64.330 | Student Test Loss: 1.858 | Student Test Acc: 51.160 | Teacher Test F1: 0.641 | Student Test F1: 0.514 | Teacher Top 5 Accuracy: 0.897 | Student Top 5 Accuracy: 0.814 | Time: 2.754 | 
+Running student landscape probe...
+[adalrs] epoch=35 decision=accept_probe best_lr=0.500000 cosine_lr=0.371220 improvement=0.016523 next_student_lr=0.500000
+[Train] Epoch: 36 | Teacher lr=0.3706 | Teacher Loss: 1.173 | Teacher Train Acc: 76.374 | Student lr=0.5000 | Student Train Acc: 67.080 | Time: 136.306 |
+[Eval] Epoch: 36 | Teacher Test Loss: 1.221 | Teacher Test Acc: 65.080 | Student Test Loss: 1.897 | Student Test Acc: 50.580 | Teacher Test F1: 0.648 | Student Test F1: 0.502 | Teacher Top 5 Accuracy: 0.898 | Student Top 5 Accuracy: 0.801 | Time: 2.620 | 
+Running student landscape probe...
+[adalrs] epoch=36 decision=accept_probe best_lr=0.500000 cosine_lr=0.346146 improvement=0.026131 next_student_lr=0.500000
+[Train] Epoch: 37 | Teacher lr=0.3455 | Teacher Loss: 1.151 | Teacher Train Acc: 77.010 | Student lr=0.5000 | Student Train Acc: 67.176 | Time: 136.673 |
+[Eval] Epoch: 37 | Teacher Test Loss: 1.154 | Teacher Test Acc: 67.120 | Student Test Loss: 1.764 | Student Test Acc: 51.950 | Teacher Test F1: 0.673 | Student Test F1: 0.528 | Teacher Top 5 Accuracy: 0.911 | Student Top 5 Accuracy: 0.825 | Time: 2.462 | 
+Running student landscape probe...
+[adalrs] epoch=37 decision=accept_probe best_lr=0.400000 cosine_lr=0.321495 improvement=0.014014 next_student_lr=0.400000
+[Train] Epoch: 38 | Teacher lr=0.3208 | Teacher Loss: 1.097 | Teacher Train Acc: 78.124 | Student lr=0.4000 | Student Train Acc: 69.232 | Time: 136.686 |
+[Eval] Epoch: 38 | Teacher Test Loss: 1.209 | Teacher Test Acc: 65.690 | Student Test Loss: 1.647 | Student Test Acc: 55.680 | Teacher Test F1: 0.659 | Student Test F1: 0.558 | Teacher Top 5 Accuracy: 0.903 | Student Top 5 Accuracy: 0.838 | Time: 2.536 | 
+Running student landscape probe...
+[adalrs] epoch=38 decision=accept_probe best_lr=0.400000 cosine_lr=0.297335 improvement=0.013965 next_student_lr=0.400000
+[Train] Epoch: 39 | Teacher lr=0.2966 | Teacher Loss: 1.085 | Teacher Train Acc: 78.636 | Student lr=0.4000 | Student Train Acc: 69.190 | Time: 138.214 |
+[Eval] Epoch: 39 | Teacher Test Loss: 1.111 | Teacher Test Acc: 68.120 | Student Test Loss: 1.861 | Student Test Acc: 50.730 | Teacher Test F1: 0.681 | Student Test F1: 0.511 | Teacher Top 5 Accuracy: 0.911 | Student Top 5 Accuracy: 0.803 | Time: 2.371 | 
+Running student landscape probe...
+[adalrs] epoch=39 decision=accept_probe best_lr=0.400000 cosine_lr=0.273732 improvement=0.012172 next_student_lr=0.400000
+[Train] Epoch: 40 | Teacher lr=0.2730 | Teacher Loss: 1.056 | Teacher Train Acc: 79.880 | Student lr=0.4000 | Student Train Acc: 69.046 | Time: 138.423 |
+[Eval] Epoch: 40 | Teacher Test Loss: 1.115 | Teacher Test Acc: 68.060 | Student Test Loss: 1.796 | Student Test Acc: 51.860 | Teacher Test F1: 0.682 | Student Test F1: 0.525 | Teacher Top 5 Accuracy: 0.912 | Student Top 5 Accuracy: 0.819 | Time: 2.341 | 
+Running student landscape probe...
+[adalrs] epoch=40 decision=fallback_cosine_clamp best_lr=0.300000 cosine_lr=0.250750 improvement=0.000000 next_student_lr=0.175525
+[Train] Epoch: 41 | Teacher lr=0.2500 | Teacher Loss: 0.943 | Teacher Train Acc: 81.064 | Student lr=0.1755 | Student Train Acc: 74.462 | Time: 137.274 |
+[Eval] Epoch: 41 | Teacher Test Loss: 1.083 | Teacher Test Acc: 68.610 | Student Test Loss: 1.348 | Student Test Acc: 61.930 | Teacher Test F1: 0.687 | Student Test F1: 0.625 | Teacher Top 5 Accuracy: 0.918 | Student Top 5 Accuracy: 0.886 | Time: 2.391 | 
+Running student landscape probe...
+[adalrs] epoch=41 decision=accept_probe best_lr=0.300000 cosine_lr=0.228453 improvement=0.018002 next_student_lr=0.300000
+[Train] Epoch: 42 | Teacher lr=0.2277 | Teacher Loss: 0.984 | Teacher Train Acc: 81.836 | Student lr=0.3000 | Student Train Acc: 71.134 | Time: 138.588 |
+[Eval] Epoch: 42 | Teacher Test Loss: 1.057 | Teacher Test Acc: 69.380 | Student Test Loss: 1.508 | Student Test Acc: 58.080 | Teacher Test F1: 0.693 | Student Test F1: 0.583 | Teacher Top 5 Accuracy: 0.919 | Student Top 5 Accuracy: 0.862 | Time: 2.428 | 
+Running student landscape probe...
+[adalrs] epoch=42 decision=accept_probe best_lr=0.300000 cosine_lr=0.206901 improvement=0.015942 next_student_lr=0.300000
+[Train] Epoch: 43 | Teacher lr=0.2061 | Teacher Loss: 0.945 | Teacher Train Acc: 83.298 | Student lr=0.3000 | Student Train Acc: 71.144 | Time: 138.402 |
+[Eval] Epoch: 43 | Teacher Test Loss: 1.049 | Teacher Test Acc: 69.740 | Student Test Loss: 1.675 | Student Test Acc: 55.020 | Teacher Test F1: 0.696 | Student Test F1: 0.554 | Teacher Top 5 Accuracy: 0.920 | Student Top 5 Accuracy: 0.839 | Time: 2.335 | 
+Running student landscape probe...
+[adalrs] epoch=43 decision=rising_loss_clamp best_lr=0.200000 cosine_lr=0.186154 improvement=0.000000 next_student_lr=0.130308
+[Train] Epoch: 44 | Teacher lr=0.1853 | Teacher Loss: 0.836 | Teacher Train Acc: 84.508 | Student lr=0.1303 | Student Train Acc: 76.682 | Time: 137.736 |
+[Eval] Epoch: 44 | Teacher Test Loss: 1.031 | Teacher Test Acc: 70.720 | Student Test Loss: 1.299 | Student Test Acc: 64.020 | Teacher Test F1: 0.708 | Student Test F1: 0.642 | Teacher Top 5 Accuracy: 0.921 | Student Top 5 Accuracy: 0.890 | Time: 2.422 | 
+Running student landscape probe...
+[adalrs] epoch=44 decision=fallback_cosine_clamp best_lr=0.200000 cosine_lr=0.166269 improvement=0.000000 next_student_lr=0.116388
+[Train] Epoch: 45 | Teacher lr=0.1654 | Teacher Loss: 0.809 | Teacher Train Acc: 85.426 | Student lr=0.1164 | Student Train Acc: 77.664 | Time: 137.835 |
+[Eval] Epoch: 45 | Teacher Test Loss: 0.992 | Teacher Test Acc: 71.590 | Student Test Loss: 1.342 | Student Test Acc: 63.370 | Teacher Test F1: 0.714 | Student Test F1: 0.635 | Teacher Top 5 Accuracy: 0.928 | Student Top 5 Accuracy: 0.886 | Time: 2.375 | 
+Running student landscape probe...
+[adalrs] epoch=45 decision=accept_probe best_lr=0.200000 cosine_lr=0.147300 improvement=0.021449 next_student_lr=0.200000
+[Train] Epoch: 46 | Teacher lr=0.1464 | Teacher Loss: 0.836 | Teacher Train Acc: 86.742 | Student lr=0.2000 | Student Train Acc: 74.024 | Time: 138.745 |
+[Eval] Epoch: 46 | Teacher Test Loss: 0.951 | Teacher Test Acc: 72.530 | Student Test Loss: 1.729 | Student Test Acc: 54.790 | Teacher Test F1: 0.726 | Student Test F1: 0.550 | Teacher Top 5 Accuracy: 0.931 | Student Top 5 Accuracy: 0.833 | Time: 2.345 | 
+Running student landscape probe...
+[adalrs] epoch=46 decision=rising_loss_clamp best_lr=0.100000 cosine_lr=0.129299 improvement=0.000000 next_student_lr=0.090509
+[Train] Epoch: 47 | Teacher lr=0.1284 | Teacher Loss: 0.722 | Teacher Train Acc: 88.148 | Student lr=0.0905 | Student Train Acc: 78.712 | Time: 138.834 |
+[Eval] Epoch: 47 | Teacher Test Loss: 0.931 | Teacher Test Acc: 73.360 | Student Test Loss: 1.230 | Student Test Acc: 65.670 | Teacher Test F1: 0.734 | Student Test F1: 0.658 | Teacher Top 5 Accuracy: 0.933 | Student Top 5 Accuracy: 0.901 | Time: 2.452 | 
+Running student landscape probe...
+[adalrs] epoch=47 decision=fallback_cosine_clamp best_lr=0.100000 cosine_lr=0.112316 improvement=0.000000 next_student_lr=0.078621
+[Train] Epoch: 48 | Teacher lr=0.1114 | Teacher Loss: 0.683 | Teacher Train Acc: 89.330 | Student lr=0.0786 | Student Train Acc: 80.070 | Time: 135.355 |
+[Eval] Epoch: 48 | Teacher Test Loss: 0.964 | Teacher Test Acc: 72.190 | Student Test Loss: 1.280 | Student Test Acc: 65.140 | Teacher Test F1: 0.722 | Student Test F1: 0.653 | Teacher Top 5 Accuracy: 0.932 | Student Top 5 Accuracy: 0.897 | Time: 2.525 | 
+Running student landscape probe...
+[adalrs] epoch=48 decision=fallback_cosine_clamp best_lr=0.100000 cosine_lr=0.096396 improvement=0.000000 next_student_lr=0.067477
+[Train] Epoch: 49 | Teacher lr=0.0955 | Teacher Loss: 0.651 | Teacher Train Acc: 90.660 | Student lr=0.0675 | Student Train Acc: 81.016 | Time: 137.434 |
+[Eval] Epoch: 49 | Teacher Test Loss: 0.922 | Teacher Test Acc: 73.050 | Student Test Loss: 1.250 | Student Test Acc: 66.000 | Teacher Test F1: 0.731 | Student Test F1: 0.659 | Teacher Top 5 Accuracy: 0.936 | Student Top 5 Accuracy: 0.898 | Time: 2.392 | 
+Running student landscape probe...
+[adalrs] epoch=49 decision=fallback_cosine_clamp best_lr=0.100000 cosine_lr=0.081584 improvement=0.000000 next_student_lr=0.057109
+[Train] Epoch: 50 | Teacher lr=0.0807 | Teacher Loss: 0.611 | Teacher Train Acc: 91.946 | Student lr=0.0571 | Student Train Acc: 81.802 | Time: 137.271 |
+[Eval] Epoch: 50 | Teacher Test Loss: 0.905 | Teacher Test Acc: 73.840 | Student Test Loss: 1.333 | Student Test Acc: 64.750 | Teacher Test F1: 0.738 | Student Test F1: 0.649 | Teacher Top 5 Accuracy: 0.938 | Student Top 5 Accuracy: 0.894 | Time: 2.468 | 
+Running student landscape probe...
+[adalrs] epoch=50 decision=accept_probe best_lr=0.100000 cosine_lr=0.067920 improvement=0.015840 next_student_lr=0.100000
+[Train] Epoch: 51 | Teacher lr=0.0670 | Teacher Loss: 0.641 | Teacher Train Acc: 93.012 | Student lr=0.1000 | Student Train Acc: 78.978 | Time: 137.961 |
+[Eval] Epoch: 51 | Teacher Test Loss: 0.884 | Teacher Test Acc: 74.310 | Student Test Loss: 1.353 | Student Test Acc: 63.230 | Teacher Test F1: 0.743 | Student Test F1: 0.634 | Teacher Top 5 Accuracy: 0.939 | Student Top 5 Accuracy: 0.889 | Time: 2.432 | 
+Running student landscape probe...
+[adalrs] epoch=51 decision=rising_loss_clamp best_lr=0.050000 cosine_lr=0.055442 improvement=0.000000 next_student_lr=0.038810
+[Train] Epoch: 52 | Teacher lr=0.0545 | Teacher Loss: 0.540 | Teacher Train Acc: 94.254 | Student lr=0.0388 | Student Train Acc: 82.880 | Time: 137.663 |
+[Eval] Epoch: 52 | Teacher Test Loss: 0.882 | Teacher Test Acc: 74.280 | Student Test Loss: 1.178 | Student Test Acc: 67.610 | Teacher Test F1: 0.743 | Student Test F1: 0.676 | Teacher Top 5 Accuracy: 0.938 | Student Top 5 Accuracy: 0.909 | Time: 2.366 | 
+Running student landscape probe...
+[adalrs] epoch=52 decision=fallback_cosine_clamp best_lr=0.050000 cosine_lr=0.044184 improvement=0.000000 next_student_lr=0.030929
+[Train] Epoch: 53 | Teacher lr=0.0432 | Teacher Loss: 0.504 | Teacher Train Acc: 95.082 | Student lr=0.0309 | Student Train Acc: 84.662 | Time: 137.614 |
+[Eval] Epoch: 53 | Teacher Test Loss: 0.865 | Teacher Test Acc: 74.920 | Student Test Loss: 1.160 | Student Test Acc: 68.310 | Teacher Test F1: 0.749 | Student Test F1: 0.684 | Teacher Top 5 Accuracy: 0.943 | Student Top 5 Accuracy: 0.911 | Time: 2.269 | 
+Running student landscape probe...
+[adalrs] epoch=53 decision=accept_probe best_lr=0.050000 cosine_lr=0.034177 improvement=0.005602 next_student_lr=0.050000
+[Train] Epoch: 54 | Teacher lr=0.0332 | Teacher Loss: 0.517 | Teacher Train Acc: 95.758 | Student lr=0.0500 | Student Train Acc: 83.360 | Time: 134.822 |
+[Eval] Epoch: 54 | Teacher Test Loss: 0.868 | Teacher Test Acc: 74.970 | Student Test Loss: 1.261 | Student Test Acc: 65.890 | Teacher Test F1: 0.750 | Student Test F1: 0.658 | Teacher Top 5 Accuracy: 0.942 | Student Top 5 Accuracy: 0.900 | Time: 2.293 | 
+Running student landscape probe...
+[adalrs] epoch=54 decision=fallback_cosine_clamp best_lr=0.025000 cosine_lr=0.025447 improvement=0.000000 next_student_lr=0.017813
+[Train] Epoch: 55 | Teacher lr=0.0245 | Teacher Loss: 0.456 | Teacher Train Acc: 96.390 | Student lr=0.0178 | Student Train Acc: 85.830 | Time: 138.355 |
+[Eval] Epoch: 55 | Teacher Test Loss: 0.849 | Teacher Test Acc: 75.300 | Student Test Loss: 1.159 | Student Test Acc: 68.150 | Teacher Test F1: 0.753 | Student Test F1: 0.682 | Teacher Top 5 Accuracy: 0.945 | Student Top 5 Accuracy: 0.915 | Time: 2.149 | 
+Running student landscape probe...
+[adalrs] epoch=55 decision=fallback_cosine_clamp best_lr=0.025000 cosine_lr=0.018020 improvement=0.000000 next_student_lr=0.012614
+[Train] Epoch: 56 | Teacher lr=0.0170 | Teacher Loss: 0.428 | Teacher Train Acc: 96.758 | Student lr=0.0126 | Student Train Acc: 87.088 | Time: 136.879 |
+[Eval] Epoch: 56 | Teacher Test Loss: 0.852 | Teacher Test Acc: 75.170 | Student Test Loss: 1.155 | Student Test Acc: 68.650 | Teacher Test F1: 0.752 | Student Test F1: 0.686 | Teacher Top 5 Accuracy: 0.944 | Student Top 5 Accuracy: 0.913 | Time: 2.117 | 
+Running student landscape probe...
+[adalrs] epoch=56 decision=fallback_cosine_clamp best_lr=0.010000 cosine_lr=0.011915 improvement=0.000000 next_student_lr=0.008341
+[Train] Epoch: 57 | Teacher lr=0.0109 | Teacher Loss: 0.412 | Teacher Train Acc: 97.130 | Student lr=0.0083 | Student Train Acc: 87.852 | Time: 137.923 |
+[Eval] Epoch: 57 | Teacher Test Loss: 0.850 | Teacher Test Acc: 75.390 | Student Test Loss: 1.148 | Student Test Acc: 68.800 | Teacher Test F1: 0.754 | Student Test F1: 0.689 | Teacher Top 5 Accuracy: 0.946 | Student Top 5 Accuracy: 0.915 | Time: 1.927 | 
+Running student landscape probe...
+[adalrs] epoch=57 decision=fallback_cosine_clamp best_lr=0.010000 cosine_lr=0.007150 improvement=0.000000 next_student_lr=0.005005
+[Train] Epoch: 58 | Teacher lr=0.0062 | Teacher Loss: 0.395 | Teacher Train Acc: 97.452 | Student lr=0.0050 | Student Train Acc: 88.544 | Time: 137.732 |
+[Eval] Epoch: 58 | Teacher Test Loss: 0.847 | Teacher Test Acc: 75.660 | Student Test Loss: 1.148 | Student Test Acc: 68.910 | Teacher Test F1: 0.757 | Student Test F1: 0.689 | Teacher Top 5 Accuracy: 0.945 | Student Top 5 Accuracy: 0.918 | Time: 2.150 | 
+Running student landscape probe...
+[adalrs] epoch=58 decision=accept_probe best_lr=0.100000 cosine_lr=0.003736 improvement=0.018408 next_student_lr=0.100000
+[Train] Epoch: 59 | Teacher lr=0.0027 | Teacher Loss: 0.604 | Teacher Train Acc: 97.562 | Student lr=0.1000 | Student Train Acc: 76.846 | Time: 138.876 |
+[Eval] Epoch: 59 | Teacher Test Loss: 0.849 | Teacher Test Acc: 75.460 | Student Test Loss: 1.570 | Student Test Acc: 60.140 | Teacher Test F1: 0.755 | Student Test F1: 0.599 | Teacher Top 5 Accuracy: 0.943 | Student Top 5 Accuracy: 0.863 | Time: 2.051 | 
+Running student landscape probe...
+[adalrs] epoch=59 decision=fallback_cosine_clamp best_lr=0.001000 cosine_lr=0.001685 improvement=0.000000 next_student_lr=0.001179
+[Train] Epoch: 60 | Teacher lr=0.0007 | Teacher Loss: 0.479 | Teacher Train Acc: 97.618 | Student lr=0.0012 | Student Train Acc: 81.960 | Time: 138.611 |
+[Eval] Epoch: 60 | Teacher Test Loss: 0.847 | Teacher Test Acc: 75.470 | Student Test Loss: 1.152 | Student Test Acc: 68.220 | Teacher Test F1: 0.755 | Student Test F1: 0.682 | Teacher Top 5 Accuracy: 0.944 | Student Top 5 Accuracy: 0.913 | Time: 2.123 | 
+Running student landscape probe...
+[adalrs] epoch=60 decision=fallback_cosine_clamp best_lr=0.001000 cosine_lr=0.001000 improvement=0.000000 next_student_lr=0.001000
+ckpt location: ckpt/sota_adalrs_stars/adalrs_default_seed1_60ep.pt

@@ -1,0 +1,120 @@
+/home/jovyan/.mlspace/envs/egy_llm/lib/python3.11/site-packages/torchvision/datasets/cifar.py:83: VisibleDeprecationWarning: dtype(): align should be passed as Python or NumPy boolean but got `align=0`. Did you mean to pass a tuple to create a subarray type? (Deprecated NumPy 2.4)
+  entry = pickle.load(f, encoding="latin1")
+depth_list: [110, 20]
+Dataset information: cifar100	 50000 images for training 	 10000 images for testing	
+teacher depth: 110
+student depth: 20
+Total number of teacher parameters: 1,169,972
+Total number of student parameters: 278,132
+Snapshots will be saved to: snapshots/robust12h_stars/cosine_shock10_seed4_35ep
+==== train and evaluate unequal restart ====
+[Eval] Epoch: 0 | Teacher Test Loss: 8723.027 | Teacher Test Acc: 1.000 | Student Test Loss: 5.114 | Student Test Acc: 0.930 | Teacher Test F1: 0.000 | Student Test F1: 0.001 | Teacher Top 5 Accuracy: 0.050 | Student Top 5 Accuracy: 0.051 | Time: 2.476 | 
+Running student landscape probe...
+[Train] Epoch: 1 | Teacher lr=1.0000 | Teacher Loss: 4.123 | Teacher Train Acc: 9.888 | Student lr=1.0000 | Student Train Acc: 22.776 | Time: 135.678 |
+[Eval] Epoch: 1 | Teacher Test Loss: 3.601 | Teacher Test Acc: 14.630 | Student Test Loss: 2.891 | Student Test Acc: 27.370 | Teacher Test F1: 0.112 | Student Test F1: 0.252 | Teacher Top 5 Accuracy: 0.399 | Student Top 5 Accuracy: 0.584 | Time: 2.424 | 
+Running student landscape probe...
+[Train] Epoch: 2 | Teacher lr=0.9980 | Teacher Loss: 3.378 | Teacher Train Acc: 23.594 | Student lr=0.9980 | Student Train Acc: 42.598 | Time: 138.194 |
+[Eval] Epoch: 2 | Teacher Test Loss: 3.063 | Teacher Test Acc: 24.480 | Student Test Loss: 3.205 | Student Test Acc: 24.750 | Teacher Test F1: 0.222 | Student Test F1: 0.234 | Teacher Top 5 Accuracy: 0.582 | Student Top 5 Accuracy: 0.546 | Time: 2.687 | 
+Running student landscape probe...
+[Train] Epoch: 3 | Teacher lr=0.9920 | Teacher Loss: 2.741 | Teacher Train Acc: 35.372 | Student lr=0.9920 | Student Train Acc: 48.594 | Time: 135.805 |
+[Eval] Epoch: 3 | Teacher Test Loss: 2.679 | Teacher Test Acc: 32.740 | Student Test Loss: 3.023 | Student Test Acc: 27.560 | Teacher Test F1: 0.310 | Student Test F1: 0.263 | Teacher Top 5 Accuracy: 0.650 | Student Top 5 Accuracy: 0.584 | Time: 2.430 | 
+Running student landscape probe...
+[Train] Epoch: 4 | Teacher lr=0.9820 | Teacher Loss: 2.412 | Teacher Train Acc: 42.654 | Student lr=0.9820 | Student Train Acc: 52.276 | Time: 136.310 |
+[Eval] Epoch: 4 | Teacher Test Loss: 2.387 | Teacher Test Acc: 37.050 | Student Test Loss: 3.051 | Student Test Acc: 27.310 | Teacher Test F1: 0.362 | Student Test F1: 0.258 | Teacher Top 5 Accuracy: 0.717 | Student Top 5 Accuracy: 0.581 | Time: 2.396 | 
+Running student landscape probe...
+[Train] Epoch: 5 | Teacher lr=0.9681 | Teacher Loss: 2.230 | Teacher Train Acc: 46.808 | Student lr=0.9681 | Student Train Acc: 54.558 | Time: 138.162 |
+[Eval] Epoch: 5 | Teacher Test Loss: 2.110 | Teacher Test Acc: 43.260 | Student Test Loss: 2.485 | Student Test Acc: 36.330 | Teacher Test F1: 0.432 | Student Test F1: 0.359 | Teacher Top 5 Accuracy: 0.757 | Student Top 5 Accuracy: 0.709 | Time: 2.550 | 
+Running student landscape probe...
+[Train] Epoch: 6 | Teacher lr=0.9505 | Teacher Loss: 2.465 | Teacher Train Acc: 43.344 | Student lr=0.9505 | Student Train Acc: 55.706 | Time: 136.203 |
+[Eval] Epoch: 6 | Teacher Test Loss: 2.067 | Teacher Test Acc: 44.070 | Student Test Loss: 2.957 | Student Test Acc: 28.570 | Teacher Test F1: 0.436 | Student Test F1: 0.283 | Teacher Top 5 Accuracy: 0.766 | Student Top 5 Accuracy: 0.613 | Time: 2.463 | 
+Running student landscape probe...
+[Train] Epoch: 7 | Teacher lr=0.9292 | Teacher Loss: 2.023 | Teacher Train Acc: 52.052 | Student lr=0.9292 | Student Train Acc: 57.264 | Time: 136.897 |
+[Eval] Epoch: 7 | Teacher Test Loss: 2.037 | Teacher Test Acc: 44.740 | Student Test Loss: 2.695 | Student Test Acc: 32.110 | Teacher Test F1: 0.442 | Student Test F1: 0.321 | Teacher Top 5 Accuracy: 0.777 | Student Top 5 Accuracy: 0.665 | Time: 2.674 | 
+Running student landscape probe...
+[Train] Epoch: 8 | Teacher lr=0.9045 | Teacher Loss: 1.930 | Teacher Train Acc: 54.452 | Student lr=0.9045 | Student Train Acc: 58.342 | Time: 137.029 |
+[Eval] Epoch: 8 | Teacher Test Loss: 1.915 | Teacher Test Acc: 47.890 | Student Test Loss: 2.595 | Student Test Acc: 34.740 | Teacher Test F1: 0.478 | Student Test F1: 0.348 | Teacher Top 5 Accuracy: 0.805 | Student Top 5 Accuracy: 0.687 | Time: 2.766 | 
+Running student landscape probe...
+[Train] Epoch: 9 | Teacher lr=0.8765 | Teacher Loss: 1.859 | Teacher Train Acc: 56.288 | Student lr=0.8765 | Student Train Acc: 59.184 | Time: 137.493 |
+[Eval] Epoch: 9 | Teacher Test Loss: 1.908 | Teacher Test Acc: 48.080 | Student Test Loss: 2.370 | Student Test Acc: 39.230 | Teacher Test F1: 0.471 | Student Test F1: 0.383 | Teacher Top 5 Accuracy: 0.795 | Student Top 5 Accuracy: 0.715 | Time: 2.764 | 
+Running student landscape probe...
+[Train] Epoch: 10 | Teacher lr=0.8455 | Teacher Loss: 1.797 | Teacher Train Acc: 57.888 | Student lr=0.8455 | Student Train Acc: 60.100 | Time: 135.806 |
+[Eval] Epoch: 10 | Teacher Test Loss: 1.753 | Teacher Test Acc: 50.980 | Student Test Loss: 2.341 | Student Test Acc: 41.820 | Teacher Test F1: 0.502 | Student Test F1: 0.404 | Teacher Top 5 Accuracy: 0.823 | Student Top 5 Accuracy: 0.727 | Time: 2.624 | 
+Running student landscape probe...
+[Train] Epoch: 11 | Teacher lr=0.8117 | Teacher Loss: 1.736 | Teacher Train Acc: 59.508 | Student lr=0.8117 | Student Train Acc: 60.948 | Time: 136.117 |
+[Eval] Epoch: 11 | Teacher Test Loss: 1.641 | Teacher Test Acc: 54.610 | Student Test Loss: 4.298 | Student Test Acc: 23.220 | Teacher Test F1: 0.544 | Student Test F1: 0.227 | Teacher Top 5 Accuracy: 0.833 | Student Top 5 Accuracy: 0.516 | Time: 2.663 | 
+Running student landscape probe...
+[Train] Epoch: 12 | Teacher lr=0.7754 | Teacher Loss: 1.687 | Teacher Train Acc: 60.764 | Student lr=0.7754 | Student Train Acc: 61.670 | Time: 134.901 |
+[Eval] Epoch: 12 | Teacher Test Loss: 1.697 | Teacher Test Acc: 53.430 | Student Test Loss: 2.096 | Student Test Acc: 45.540 | Teacher Test F1: 0.530 | Student Test F1: 0.452 | Teacher Top 5 Accuracy: 0.834 | Student Top 5 Accuracy: 0.768 | Time: 2.690 | 
+Running student landscape probe...
+[Train] Epoch: 13 | Teacher lr=0.7369 | Teacher Loss: 1.626 | Teacher Train Acc: 62.406 | Student lr=0.7369 | Student Train Acc: 62.328 | Time: 134.359 |
+[Eval] Epoch: 13 | Teacher Test Loss: 1.612 | Teacher Test Acc: 54.720 | Student Test Loss: 2.205 | Student Test Acc: 42.890 | Teacher Test F1: 0.546 | Student Test F1: 0.433 | Teacher Top 5 Accuracy: 0.847 | Student Top 5 Accuracy: 0.753 | Time: 2.621 | 
+Running student landscape probe...
+[Train] Epoch: 14 | Teacher lr=0.6965 | Teacher Loss: 1.577 | Teacher Train Acc: 63.524 | Student lr=0.6965 | Student Train Acc: 63.056 | Time: 137.059 |
+[Eval] Epoch: 14 | Teacher Test Loss: 1.718 | Teacher Test Acc: 51.170 | Student Test Loss: 2.646 | Student Test Acc: 36.190 | Teacher Test F1: 0.509 | Student Test F1: 0.375 | Teacher Top 5 Accuracy: 0.830 | Student Top 5 Accuracy: 0.691 | Time: 2.765 | 
+Running student landscape probe...
+[Train] Epoch: 15 | Teacher lr=0.6545 | Teacher Loss: 1.535 | Teacher Train Acc: 64.872 | Student lr=0.6545 | Student Train Acc: 64.050 | Time: 136.804 |
+[Eval] Epoch: 15 | Teacher Test Loss: 1.496 | Teacher Test Acc: 57.890 | Student Test Loss: 2.269 | Student Test Acc: 43.770 | Teacher Test F1: 0.579 | Student Test F1: 0.432 | Teacher Top 5 Accuracy: 0.863 | Student Top 5 Accuracy: 0.733 | Time: 2.720 | 
+Running student landscape probe...
+[Train] Epoch: 16 | Teacher lr=0.6113 | Teacher Loss: 1.489 | Teacher Train Acc: 65.796 | Student lr=0.6113 | Student Train Acc: 64.604 | Time: 136.301 |
+[Eval] Epoch: 16 | Teacher Test Loss: 1.517 | Teacher Test Acc: 57.450 | Student Test Loss: 1.870 | Student Test Acc: 49.300 | Teacher Test F1: 0.573 | Student Test F1: 0.491 | Teacher Top 5 Accuracy: 0.861 | Student Top 5 Accuracy: 0.800 | Time: 2.800 | 
+Running student landscape probe...
+[Train] Epoch: 17 | Teacher lr=0.5671 | Teacher Loss: 1.437 | Teacher Train Acc: 67.384 | Student lr=0.5671 | Student Train Acc: 65.712 | Time: 136.313 |
+[Eval] Epoch: 17 | Teacher Test Loss: 1.625 | Teacher Test Acc: 54.710 | Student Test Loss: 1.803 | Student Test Acc: 51.260 | Teacher Test F1: 0.550 | Student Test F1: 0.524 | Teacher Top 5 Accuracy: 0.847 | Student Top 5 Accuracy: 0.815 | Time: 2.714 | 
+Running student landscape probe...
+[Train] Epoch: 18 | Teacher lr=0.5224 | Teacher Loss: 1.393 | Teacher Train Acc: 68.726 | Student lr=0.5224 | Student Train Acc: 66.470 | Time: 136.952 |
+[Eval] Epoch: 18 | Teacher Test Loss: 1.373 | Teacher Test Acc: 60.710 | Student Test Loss: 1.781 | Student Test Acc: 51.730 | Teacher Test F1: 0.608 | Student Test F1: 0.524 | Teacher Top 5 Accuracy: 0.880 | Student Top 5 Accuracy: 0.820 | Time: 2.559 | 
+Running student landscape probe...
+[Train] Epoch: 19 | Teacher lr=0.4776 | Teacher Loss: 1.346 | Teacher Train Acc: 69.844 | Student lr=0.4776 | Student Train Acc: 67.354 | Time: 134.790 |
+[Eval] Epoch: 19 | Teacher Test Loss: 1.333 | Teacher Test Acc: 61.940 | Student Test Loss: 2.013 | Student Test Acc: 46.660 | Teacher Test F1: 0.621 | Student Test F1: 0.464 | Teacher Top 5 Accuracy: 0.889 | Student Top 5 Accuracy: 0.793 | Time: 2.774 | 
+Running student landscape probe...
+[shock] epoch=20 forcing student_lr=1.000000 (window=20..21)
+[Train] Epoch: 20 | Teacher lr=0.4329 | Teacher Loss: 1.382 | Teacher Train Acc: 71.532 | Student lr=1.0000 | Student Train Acc: 60.528 | Time: 135.973 |
+[Eval] Epoch: 20 | Teacher Test Loss: 1.294 | Teacher Test Acc: 63.140 | Student Test Loss: 2.148 | Student Test Acc: 44.390 | Teacher Test F1: 0.630 | Student Test F1: 0.445 | Teacher Top 5 Accuracy: 0.893 | Student Top 5 Accuracy: 0.775 | Time: 2.688 | 
+Running student landscape probe...
+[shock] epoch=21 forcing student_lr=1.000000 (window=20..21)
+[Train] Epoch: 21 | Teacher lr=0.3887 | Teacher Loss: 1.318 | Teacher Train Acc: 73.102 | Student lr=1.0000 | Student Train Acc: 61.720 | Time: 135.207 |
+[Eval] Epoch: 21 | Teacher Test Loss: 1.202 | Teacher Test Acc: 65.250 | Student Test Loss: 2.798 | Student Test Acc: 35.840 | Teacher Test F1: 0.649 | Student Test F1: 0.356 | Teacher Top 5 Accuracy: 0.906 | Student Top 5 Accuracy: 0.657 | Time: 2.605 | 
+Running student landscape probe...
+[Train] Epoch: 22 | Teacher lr=0.3455 | Teacher Loss: 1.264 | Teacher Train Acc: 74.252 | Student lr=0.8887 | Student Train Acc: 62.702 | Time: 136.980 |
+[Eval] Epoch: 22 | Teacher Test Loss: 1.172 | Teacher Test Acc: 66.320 | Student Test Loss: 2.489 | Student Test Acc: 37.460 | Teacher Test F1: 0.663 | Student Test F1: 0.366 | Teacher Top 5 Accuracy: 0.909 | Student Top 5 Accuracy: 0.698 | Time: 2.722 | 
+Running student landscape probe...
+[Train] Epoch: 23 | Teacher lr=0.3035 | Teacher Loss: 1.215 | Teacher Train Acc: 75.618 | Student lr=0.7807 | Student Train Acc: 64.094 | Time: 133.961 |
+[Eval] Epoch: 23 | Teacher Test Loss: 1.197 | Teacher Test Acc: 65.300 | Student Test Loss: 4.285 | Student Test Acc: 23.220 | Teacher Test F1: 0.648 | Student Test F1: 0.235 | Teacher Top 5 Accuracy: 0.906 | Student Top 5 Accuracy: 0.490 | Time: 2.741 | 
+Running student landscape probe...
+[Train] Epoch: 24 | Teacher lr=0.2631 | Teacher Loss: 1.158 | Teacher Train Acc: 77.230 | Student lr=0.6767 | Student Train Acc: 65.356 | Time: 137.079 |
+[Eval] Epoch: 24 | Teacher Test Loss: 1.138 | Teacher Test Acc: 67.480 | Student Test Loss: 1.750 | Student Test Acc: 52.210 | Teacher Test F1: 0.673 | Student Test F1: 0.519 | Teacher Top 5 Accuracy: 0.911 | Student Top 5 Accuracy: 0.826 | Time: 2.795 | 
+Running student landscape probe...
+[Train] Epoch: 25 | Teacher lr=0.2246 | Teacher Loss: 1.098 | Teacher Train Acc: 78.526 | Student lr=0.5776 | Student Train Acc: 66.708 | Time: 135.791 |
+[Eval] Epoch: 25 | Teacher Test Loss: 1.075 | Teacher Test Acc: 68.650 | Student Test Loss: 2.025 | Student Test Acc: 47.990 | Teacher Test F1: 0.687 | Student Test F1: 0.487 | Teacher Top 5 Accuracy: 0.921 | Student Top 5 Accuracy: 0.787 | Time: 2.668 | 
+Running student landscape probe...
+[Train] Epoch: 26 | Teacher lr=0.1883 | Teacher Loss: 1.033 | Teacher Train Acc: 80.492 | Student lr=0.4843 | Student Train Acc: 68.054 | Time: 137.075 |
+[Eval] Epoch: 26 | Teacher Test Loss: 1.044 | Teacher Test Acc: 70.450 | Student Test Loss: 2.533 | Student Test Acc: 39.460 | Teacher Test F1: 0.703 | Student Test F1: 0.399 | Teacher Top 5 Accuracy: 0.922 | Student Top 5 Accuracy: 0.695 | Time: 2.761 | 
+Running student landscape probe...
+[Train] Epoch: 27 | Teacher lr=0.1545 | Teacher Loss: 0.968 | Teacher Train Acc: 82.304 | Student lr=0.3974 | Student Train Acc: 69.592 | Time: 136.256 |
+[Eval] Epoch: 27 | Teacher Test Loss: 1.006 | Teacher Test Acc: 71.340 | Student Test Loss: 1.612 | Student Test Acc: 56.300 | Teacher Test F1: 0.712 | Student Test F1: 0.564 | Teacher Top 5 Accuracy: 0.925 | Student Top 5 Accuracy: 0.843 | Time: 2.667 | 
+Running student landscape probe...
+[Train] Epoch: 28 | Teacher lr=0.1235 | Teacher Loss: 0.905 | Teacher Train Acc: 83.788 | Student lr=0.3176 | Student Train Acc: 71.516 | Time: 137.899 |
+[Eval] Epoch: 28 | Teacher Test Loss: 0.954 | Teacher Test Acc: 72.560 | Student Test Loss: 1.572 | Student Test Acc: 56.870 | Teacher Test F1: 0.724 | Student Test F1: 0.562 | Teacher Top 5 Accuracy: 0.935 | Student Top 5 Accuracy: 0.851 | Time: 2.627 | 
+Running student landscape probe...
+[Train] Epoch: 29 | Teacher lr=0.0955 | Teacher Loss: 0.836 | Teacher Train Acc: 85.822 | Student lr=0.2456 | Student Train Acc: 73.228 | Time: 133.442 |
+[Eval] Epoch: 29 | Teacher Test Loss: 0.931 | Teacher Test Acc: 72.840 | Student Test Loss: 1.648 | Student Test Acc: 56.440 | Teacher Test F1: 0.728 | Student Test F1: 0.568 | Teacher Top 5 Accuracy: 0.935 | Student Top 5 Accuracy: 0.840 | Time: 2.718 | 
+Running student landscape probe...
+[Train] Epoch: 30 | Teacher lr=0.0708 | Teacher Loss: 0.771 | Teacher Train Acc: 87.272 | Student lr=0.1821 | Student Train Acc: 75.596 | Time: 137.236 |
+[Eval] Epoch: 30 | Teacher Test Loss: 0.899 | Teacher Test Acc: 73.780 | Student Test Loss: 1.403 | Student Test Acc: 61.150 | Teacher Test F1: 0.737 | Student Test F1: 0.612 | Teacher Top 5 Accuracy: 0.937 | Student Top 5 Accuracy: 0.880 | Time: 2.573 | 
+Running student landscape probe...
+[Train] Epoch: 31 | Teacher lr=0.0495 | Teacher Loss: 0.695 | Teacher Train Acc: 89.148 | Student lr=0.1274 | Student Train Acc: 77.992 | Time: 135.052 |
+[Eval] Epoch: 31 | Teacher Test Loss: 0.883 | Teacher Test Acc: 74.680 | Student Test Loss: 1.246 | Student Test Acc: 64.430 | Teacher Test F1: 0.747 | Student Test F1: 0.646 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.898 | Time: 2.745 | 
+Running student landscape probe...
+[Train] Epoch: 32 | Teacher lr=0.0319 | Teacher Loss: 0.631 | Teacher Train Acc: 90.410 | Student lr=0.0820 | Student Train Acc: 80.268 | Time: 134.901 |
+[Eval] Epoch: 32 | Teacher Test Loss: 0.869 | Teacher Test Acc: 74.830 | Student Test Loss: 1.251 | Student Test Acc: 65.610 | Teacher Test F1: 0.748 | Student Test F1: 0.654 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.902 | Time: 2.640 | 
+Running student landscape probe...
+[Train] Epoch: 33 | Teacher lr=0.0180 | Teacher Loss: 0.576 | Teacher Train Acc: 91.588 | Student lr=0.0464 | Student Train Acc: 82.798 | Time: 135.150 |
+[Eval] Epoch: 33 | Teacher Test Loss: 0.847 | Teacher Test Acc: 75.350 | Student Test Loss: 1.160 | Student Test Acc: 67.790 | Teacher Test F1: 0.753 | Student Test F1: 0.680 | Teacher Top 5 Accuracy: 0.944 | Student Top 5 Accuracy: 0.912 | Time: 2.558 | 
+Running student landscape probe...
+[Train] Epoch: 34 | Teacher lr=0.0080 | Teacher Loss: 0.530 | Teacher Train Acc: 92.336 | Student lr=0.0207 | Student Train Acc: 84.780 | Time: 135.680 |
+[Eval] Epoch: 34 | Teacher Test Loss: 0.845 | Teacher Test Acc: 75.430 | Student Test Loss: 1.068 | Student Test Acc: 70.120 | Teacher Test F1: 0.754 | Student Test F1: 0.701 | Teacher Top 5 Accuracy: 0.943 | Student Top 5 Accuracy: 0.920 | Time: 2.529 | 
+Running student landscape probe...
+[Train] Epoch: 35 | Teacher lr=0.0020 | Teacher Loss: 0.504 | Teacher Train Acc: 92.832 | Student lr=0.0052 | Student Train Acc: 86.136 | Time: 129.383 |
+[Eval] Epoch: 35 | Teacher Test Loss: 0.844 | Teacher Test Acc: 75.580 | Student Test Loss: 1.050 | Student Test Acc: 70.370 | Teacher Test F1: 0.756 | Student Test F1: 0.704 | Teacher Top 5 Accuracy: 0.944 | Student Top 5 Accuracy: 0.923 | Time: 1.628 | 
+Running student landscape probe...
+ckpt location: ckpt/robust12h_stars/cosine_shock10_seed4_35ep.pt

@@ -1,0 +1,153 @@
+depth_list: [110, 20]
+[LR policy] loaded checkpoint=checkpoints/policies_beatcos/patchtst_seed0/policy.pt,checkpoints/policies_beatcos/patchtst_seed2/policy.pt,checkpoints/policies_beatcos/patchtst_seed5/policy.pt,checkpoints/policies_beatcos/patchtst_seed7/policy.pt,checkpoints/policies_beatcos/patchtst_seed4/policy.pt model_type=patchtst input_dim=230 n_models=5
+[NoisyClassificationDataset] num_classes=100 label_noise_rate=0.200 input_noise_std=0.0000 flipped=9886/50000
+Dataset information: cifar100	 50000 images for training 	 10000 images for testing	
+teacher depth: 110
+student depth: 20
+Total number of teacher parameters: 1,169,972
+Total number of student parameters: 278,132
+Snapshots will be saved to: snapshots/robust12h_mlspace/O5_patchtst_noiseon15_seed2_35ep
+==== train and evaluate unequal restart ====
+[Eval] Epoch: 0 | Teacher Test Loss: 11623.433 | Teacher Test Acc: 1.000 | Student Test Loss: 6.044 | Student Test Acc: 1.110 | Teacher Test F1: 0.000 | Student Test F1: 0.000 | Teacher Top 5 Accuracy: 0.049 | Student Top 5 Accuracy: 0.052 | Time: 2.937 | 
+Running student landscape probe...
+[Train] Epoch: 1 | Teacher lr=1.0000 | Teacher Loss: 4.066 | Teacher Train Acc: 8.970 | Student lr=0.0100 | Student Train Acc: 7.092 | Time: 141.032 |
+[Eval] Epoch: 1 | Teacher Test Loss: 3.750 | Teacher Test Acc: 10.960 | Student Test Loss: 3.840 | Student Test Acc: 9.980 | Teacher Test F1: 0.080 | Student Test F1: 0.065 | Teacher Top 5 Accuracy: 0.349 | Student Top 5 Accuracy: 0.315 | Time: 2.395 | 
+Running student landscape probe...
+[LR policy] epoch=1 output=residual_log policy_pred=-0.248423 predicted_lr=0.778461 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.997989
+[Train] Epoch: 2 | Teacher lr=0.9980 | Teacher Loss: 3.476 | Teacher Train Acc: 19.414 | Student lr=0.9980 | Student Train Acc: 18.888 | Time: 139.007 |
+[Eval] Epoch: 2 | Teacher Test Loss: 3.288 | Teacher Test Acc: 20.600 | Student Test Loss: 2.981 | Student Test Acc: 24.850 | Teacher Test F1: 0.180 | Student Test F1: 0.228 | Teacher Top 5 Accuracy: 0.498 | Student Top 5 Accuracy: 0.577 | Time: 2.472 | 
+Running student landscape probe...
+[LR policy] epoch=2 output=residual_log policy_pred=-0.209930 predicted_lr=0.804133 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.991973
+[Train] Epoch: 3 | Teacher lr=0.9920 | Teacher Loss: 2.905 | Teacher Train Acc: 30.766 | Student lr=0.9920 | Student Train Acc: 38.734 | Time: 141.579 |
+[Eval] Epoch: 3 | Teacher Test Loss: 2.869 | Teacher Test Acc: 28.240 | Student Test Loss: 2.742 | Student Test Acc: 30.370 | Teacher Test F1: 0.265 | Student Test F1: 0.282 | Teacher Top 5 Accuracy: 0.597 | Student Top 5 Accuracy: 0.633 | Time: 2.245 | 
+Running student landscape probe...
+[LR policy] epoch=3 output=residual_log policy_pred=-0.259376 predicted_lr=0.757645 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.981999
+[Train] Epoch: 4 | Teacher lr=0.9820 | Teacher Loss: 2.543 | Teacher Train Acc: 38.926 | Student lr=0.9820 | Student Train Acc: 46.006 | Time: 141.430 |
+[Eval] Epoch: 4 | Teacher Test Loss: 2.409 | Teacher Test Acc: 36.040 | Student Test Loss: 2.246 | Student Test Acc: 39.520 | Teacher Test F1: 0.338 | Student Test F1: 0.379 | Teacher Top 5 Accuracy: 0.708 | Student Top 5 Accuracy: 0.734 | Time: 2.222 | 
+Running student landscape probe...
+[LR policy] epoch=4 output=residual_log policy_pred=-0.226968 predicted_lr=0.771563 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.968149
+[Train] Epoch: 5 | Teacher lr=0.9681 | Teacher Loss: 2.298 | Teacher Train Acc: 44.912 | Student lr=0.9681 | Student Train Acc: 50.014 | Time: 134.035 |
+[Eval] Epoch: 5 | Teacher Test Loss: 2.475 | Teacher Test Acc: 35.940 | Student Test Loss: 3.308 | Student Test Acc: 26.720 | Teacher Test F1: 0.351 | Student Test F1: 0.262 | Teacher Top 5 Accuracy: 0.713 | Student Top 5 Accuracy: 0.577 | Time: 2.437 | 
+Running student landscape probe...
+[LR policy] epoch=5 output=residual_log policy_pred=-0.258731 predicted_lr=0.733841 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.950534
+[Train] Epoch: 6 | Teacher lr=0.9505 | Teacher Loss: 2.173 | Teacher Train Acc: 48.250 | Student lr=0.9505 | Student Train Acc: 52.690 | Time: 135.589 |
+[Eval] Epoch: 6 | Teacher Test Loss: 2.521 | Teacher Test Acc: 35.550 | Student Test Loss: 2.648 | Student Test Acc: 33.150 | Teacher Test F1: 0.345 | Student Test F1: 0.321 | Teacher Top 5 Accuracy: 0.684 | Student Top 5 Accuracy: 0.666 | Time: 2.340 | 
+Running student landscape probe...
+[LR policy] epoch=6 output=residual_log policy_pred=-0.231163 predicted_lr=0.737498 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.929295
+[Train] Epoch: 7 | Teacher lr=0.9292 | Teacher Loss: 2.162 | Teacher Train Acc: 49.240 | Student lr=0.9293 | Student Train Acc: 54.050 | Time: 139.361 |
+[Eval] Epoch: 7 | Teacher Test Loss: 2.233 | Teacher Test Acc: 40.240 | Student Test Loss: 2.841 | Student Test Acc: 33.110 | Teacher Test F1: 0.394 | Student Test F1: 0.328 | Teacher Top 5 Accuracy: 0.745 | Student Top 5 Accuracy: 0.645 | Time: 2.410 | 
+Running student landscape probe...
+[LR policy] epoch=7 output=residual_log policy_pred=-0.265617 predicted_lr=0.693589 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.904604
+[Train] Epoch: 8 | Teacher lr=0.9045 | Teacher Loss: 1.947 | Teacher Train Acc: 54.216 | Student lr=0.9046 | Student Train Acc: 55.980 | Time: 139.503 |
+[Eval] Epoch: 8 | Teacher Test Loss: 1.924 | Teacher Test Acc: 47.570 | Student Test Loss: 2.404 | Student Test Acc: 38.670 | Teacher Test F1: 0.465 | Student Test F1: 0.383 | Teacher Top 5 Accuracy: 0.791 | Student Top 5 Accuracy: 0.704 | Time: 2.439 | 
+Running student landscape probe...
+[LR policy] epoch=8 output=residual_log policy_pred=-0.232366 predicted_lr=0.694889 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.876659
+[Train] Epoch: 9 | Teacher lr=0.8765 | Teacher Loss: 1.881 | Teacher Train Acc: 56.024 | Student lr=0.8767 | Student Train Acc: 56.840 | Time: 138.826 |
+[Eval] Epoch: 9 | Teacher Test Loss: 2.452 | Teacher Test Acc: 37.670 | Student Test Loss: 2.814 | Student Test Acc: 30.450 | Teacher Test F1: 0.372 | Student Test F1: 0.296 | Teacher Top 5 Accuracy: 0.716 | Student Top 5 Accuracy: 0.624 | Time: 2.446 | 
+Running student landscape probe...
+[LR policy] epoch=9 output=residual_log policy_pred=-0.265172 predicted_lr=0.648704 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.845686
+[Train] Epoch: 10 | Teacher lr=0.8455 | Teacher Loss: 1.822 | Teacher Train Acc: 57.488 | Student lr=0.8457 | Student Train Acc: 57.914 | Time: 139.122 |
+[Eval] Epoch: 10 | Teacher Test Loss: 2.001 | Teacher Test Acc: 46.580 | Student Test Loss: 3.233 | Student Test Acc: 28.240 | Teacher Test F1: 0.450 | Student Test F1: 0.267 | Teacher Top 5 Accuracy: 0.775 | Student Top 5 Accuracy: 0.577 | Time: 2.335 | 
+Running student landscape probe...
+[LR policy] epoch=10 output=residual_log policy_pred=-0.264723 predicted_lr=0.623092 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.811933
+[Train] Epoch: 11 | Teacher lr=0.8117 | Teacher Loss: 1.834 | Teacher Train Acc: 57.552 | Student lr=0.8119 | Student Train Acc: 58.808 | Time: 138.714 |
+[Eval] Epoch: 11 | Teacher Test Loss: 1.681 | Teacher Test Acc: 52.760 | Student Test Loss: 2.190 | Student Test Acc: 43.790 | Teacher Test F1: 0.517 | Student Test F1: 0.426 | Teacher Top 5 Accuracy: 0.837 | Student Top 5 Accuracy: 0.765 | Time: 2.525 | 
+Running student landscape probe...
+[LR policy] epoch=11 output=residual_log policy_pred=-0.261544 predicted_lr=0.597161 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.731045
+[Train] Epoch: 12 | Teacher lr=0.7754 | Teacher Loss: 1.700 | Teacher Train Acc: 60.506 | Student lr=0.7310 | Student Train Acc: 59.918 | Time: 134.248 |
+[Eval] Epoch: 12 | Teacher Test Loss: 1.647 | Teacher Test Acc: 53.490 | Student Test Loss: 2.208 | Student Test Acc: 42.700 | Teacher Test F1: 0.530 | Student Test F1: 0.422 | Teacher Top 5 Accuracy: 0.838 | Student Top 5 Accuracy: 0.750 | Time: 2.377 | 
+Running student landscape probe...
+[LR policy] epoch=12 output=residual_log policy_pred=-0.264218 predicted_lr=0.566025 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.694404
+[Train] Epoch: 13 | Teacher lr=0.7369 | Teacher Loss: 1.647 | Teacher Train Acc: 61.958 | Student lr=0.6944 | Student Train Acc: 60.590 | Time: 139.876 |
+[Eval] Epoch: 13 | Teacher Test Loss: 1.624 | Teacher Test Acc: 54.490 | Student Test Loss: 1.960 | Student Test Acc: 47.480 | Teacher Test F1: 0.545 | Student Test F1: 0.474 | Teacher Top 5 Accuracy: 0.842 | Student Top 5 Accuracy: 0.785 | Time: 2.304 | 
+Running student landscape probe...
+[LR policy] epoch=13 output=residual_log policy_pred=-0.259555 predicted_lr=0.537520 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.656992
+[Train] Epoch: 14 | Teacher lr=0.6965 | Teacher Loss: 1.609 | Teacher Train Acc: 63.060 | Student lr=0.6570 | Student Train Acc: 61.424 | Time: 136.329 |
+[Eval] Epoch: 14 | Teacher Test Loss: 1.637 | Teacher Test Acc: 53.960 | Student Test Loss: 1.973 | Student Test Acc: 46.500 | Teacher Test F1: 0.544 | Student Test F1: 0.464 | Teacher Top 5 Accuracy: 0.845 | Student Top 5 Accuracy: 0.789 | Time: 2.357 | 
+Running student landscape probe...
+[LR policy] epoch=14 output=residual_log policy_pred=-0.264574 predicted_lr=0.502622 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.616796
+[Train] Epoch: 15 | Teacher lr=0.6545 | Teacher Loss: 2.775 | Teacher Train Acc: 49.950 | Student lr=0.6168 | Student Train Acc: 48.360 | Time: 135.157 |
+[Eval] Epoch: 15 | Teacher Test Loss: 1.770 | Teacher Test Acc: 54.750 | Student Test Loss: 2.575 | Student Test Acc: 36.530 | Teacher Test F1: 0.552 | Student Test F1: 0.364 | Teacher Top 5 Accuracy: 0.847 | Student Top 5 Accuracy: 0.670 | Time: 2.366 | 
+Running student landscape probe...
+[LR policy] epoch=15 output=residual_log policy_pred=-0.265515 predicted_lr=0.469019 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.575992
+[Train] Epoch: 16 | Teacher lr=0.6113 | Teacher Loss: 2.690 | Teacher Train Acc: 50.756 | Student lr=0.5760 | Student Train Acc: 48.014 | Time: 139.080 |
+[Eval] Epoch: 16 | Teacher Test Loss: 1.701 | Teacher Test Acc: 55.500 | Student Test Loss: 2.059 | Student Test Acc: 48.600 | Teacher Test F1: 0.554 | Student Test F1: 0.479 | Teacher Top 5 Accuracy: 0.842 | Student Top 5 Accuracy: 0.782 | Time: 2.558 | 
+Running student landscape probe...
+[LR policy] epoch=16 output=residual_log policy_pred=-0.287805 predicted_lr=0.425610 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.532065
+[Train] Epoch: 17 | Teacher lr=0.5671 | Teacher Loss: 2.658 | Teacher Train Acc: 51.058 | Student lr=0.5321 | Student Train Acc: 48.370 | Time: 140.978 |
+[Eval] Epoch: 17 | Teacher Test Loss: 1.736 | Teacher Test Acc: 55.640 | Student Test Loss: 2.097 | Student Test Acc: 47.530 | Teacher Test F1: 0.557 | Student Test F1: 0.465 | Teacher Top 5 Accuracy: 0.844 | Student Top 5 Accuracy: 0.779 | Time: 2.432 | 
+Running student landscape probe...
+[LR policy] epoch=17 output=residual_log policy_pred=-0.288102 predicted_lr=0.392018 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.490187
+[Train] Epoch: 18 | Teacher lr=0.5224 | Teacher Loss: 2.621 | Teacher Train Acc: 51.890 | Student lr=0.4902 | Student Train Acc: 48.772 | Time: 140.456 |
+[Eval] Epoch: 18 | Teacher Test Loss: 1.662 | Teacher Test Acc: 58.320 | Student Test Loss: 2.005 | Student Test Acc: 49.350 | Teacher Test F1: 0.576 | Student Test F1: 0.485 | Teacher Top 5 Accuracy: 0.865 | Student Top 5 Accuracy: 0.789 | Time: 2.404 | 
+Running student landscape probe...
+[LR policy] epoch=18 output=residual_log policy_pred=-0.280830 predicted_lr=0.361033 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.448826
+[Train] Epoch: 19 | Teacher lr=0.4776 | Teacher Loss: 2.583 | Teacher Train Acc: 52.598 | Student lr=0.4488 | Student Train Acc: 49.910 | Time: 134.146 |
+[Eval] Epoch: 19 | Teacher Test Loss: 1.656 | Teacher Test Acc: 57.020 | Student Test Loss: 2.096 | Student Test Acc: 48.070 | Teacher Test F1: 0.566 | Student Test F1: 0.466 | Teacher Top 5 Accuracy: 0.857 | Student Top 5 Accuracy: 0.768 | Time: 2.278 | 
+Running student landscape probe...
+[LR policy] epoch=19 output=residual_log policy_pred=-0.282603 predicted_lr=0.326743 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.406774
+[Train] Epoch: 20 | Teacher lr=0.4329 | Teacher Loss: 2.544 | Teacher Train Acc: 53.284 | Student lr=0.4068 | Student Train Acc: 50.494 | Time: 140.850 |
+[Eval] Epoch: 20 | Teacher Test Loss: 1.763 | Teacher Test Acc: 55.360 | Student Test Loss: 2.094 | Student Test Acc: 48.220 | Teacher Test F1: 0.556 | Student Test F1: 0.481 | Teacher Top 5 Accuracy: 0.839 | Student Top 5 Accuracy: 0.784 | Time: 2.324 | 
+Running student landscape probe...
+[LR policy] epoch=20 output=residual_log policy_pred=-0.279445 predicted_lr=0.294428 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.365620
+[Train] Epoch: 21 | Teacher lr=0.3887 | Teacher Loss: 2.501 | Teacher Train Acc: 54.276 | Student lr=0.3656 | Student Train Acc: 51.024 | Time: 134.210 |
+[Eval] Epoch: 21 | Teacher Test Loss: 1.555 | Teacher Test Acc: 60.340 | Student Test Loss: 1.939 | Student Test Acc: 50.850 | Teacher Test F1: 0.601 | Student Test F1: 0.504 | Teacher Top 5 Accuracy: 0.873 | Student Top 5 Accuracy: 0.801 | Time: 2.408 | 
+Running student landscape probe...
+[LR policy] epoch=21 output=residual_log policy_pred=-0.274346 predicted_lr=0.263095 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.325383
+[Train] Epoch: 22 | Teacher lr=0.3455 | Teacher Loss: 2.453 | Teacher Train Acc: 55.314 | Student lr=0.3254 | Student Train Acc: 51.970 | Time: 134.332 |
+[Eval] Epoch: 22 | Teacher Test Loss: 1.553 | Teacher Test Acc: 59.840 | Student Test Loss: 2.548 | Student Test Acc: 36.960 | Teacher Test F1: 0.596 | Student Test F1: 0.366 | Teacher Top 5 Accuracy: 0.864 | Student Top 5 Accuracy: 0.676 | Time: 2.442 | 
+Running student landscape probe...
+[LR policy] epoch=22 output=residual_log policy_pred=-0.267334 predicted_lr=0.232828 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.286345
+[Train] Epoch: 23 | Teacher lr=0.3035 | Teacher Loss: 2.403 | Teacher Train Acc: 56.714 | Student lr=0.2863 | Student Train Acc: 52.824 | Time: 136.235 |
+[Eval] Epoch: 23 | Teacher Test Loss: 1.507 | Teacher Test Acc: 61.820 | Student Test Loss: 2.014 | Student Test Acc: 49.850 | Teacher Test F1: 0.620 | Student Test F1: 0.499 | Teacher Top 5 Accuracy: 0.881 | Student Top 5 Accuracy: 0.783 | Time: 2.250 | 
+Running student landscape probe...
+[LR policy] epoch=23 output=residual_log policy_pred=-0.267061 predicted_lr=0.201974 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.248346
+[Train] Epoch: 24 | Teacher lr=0.2631 | Teacher Loss: 2.351 | Teacher Train Acc: 57.806 | Student lr=0.2483 | Student Train Acc: 53.588 | Time: 139.966 |
+[Eval] Epoch: 24 | Teacher Test Loss: 1.442 | Teacher Test Acc: 63.220 | Student Test Loss: 1.803 | Student Test Acc: 54.430 | Teacher Test F1: 0.626 | Student Test F1: 0.539 | Teacher Top 5 Accuracy: 0.885 | Student Top 5 Accuracy: 0.827 | Time: 2.223 | 
+Running student landscape probe...
+[LR policy] epoch=24 output=residual_log policy_pred=-0.265840 predicted_lr=0.172727 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.212177
+[Train] Epoch: 25 | Teacher lr=0.2246 | Teacher Loss: 2.297 | Teacher Train Acc: 59.476 | Student lr=0.2122 | Student Train Acc: 54.640 | Time: 141.728 |
+[Eval] Epoch: 25 | Teacher Test Loss: 1.468 | Teacher Test Acc: 63.080 | Student Test Loss: 1.925 | Student Test Acc: 51.750 | Teacher Test F1: 0.629 | Student Test F1: 0.517 | Teacher Top 5 Accuracy: 0.889 | Student Top 5 Accuracy: 0.811 | Time: 2.286 | 
+Running student landscape probe...
+[LR policy] epoch=25 output=residual_log policy_pred=-0.263936 predicted_lr=0.145208 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.178102
+[Train] Epoch: 26 | Teacher lr=0.1883 | Teacher Loss: 2.237 | Teacher Train Acc: 60.642 | Student lr=0.1781 | Student Train Acc: 55.788 | Time: 141.857 |
+[Eval] Epoch: 26 | Teacher Test Loss: 1.351 | Teacher Test Acc: 66.060 | Student Test Loss: 1.751 | Student Test Acc: 55.840 | Teacher Test F1: 0.660 | Student Test F1: 0.561 | Teacher Top 5 Accuracy: 0.903 | Student Top 5 Accuracy: 0.835 | Time: 2.216 | 
+Running student landscape probe...
+[LR policy] epoch=26 output=residual_log policy_pred=-0.269342 predicted_lr=0.118642 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.146146
+[Train] Epoch: 27 | Teacher lr=0.1545 | Teacher Loss: 2.175 | Teacher Train Acc: 61.898 | Student lr=0.1461 | Student Train Acc: 56.736 | Time: 139.165 |
+[Eval] Epoch: 27 | Teacher Test Loss: 1.322 | Teacher Test Acc: 66.270 | Student Test Loss: 1.665 | Student Test Acc: 58.320 | Teacher Test F1: 0.661 | Student Test F1: 0.580 | Teacher Top 5 Accuracy: 0.904 | Student Top 5 Accuracy: 0.845 | Time: 2.129 | 
+Running student landscape probe...
+[LR policy] epoch=27 output=residual_log policy_pred=-0.264288 predicted_lr=0.095463 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.117121
+[Train] Epoch: 28 | Teacher lr=0.1235 | Teacher Loss: 2.107 | Teacher Train Acc: 63.634 | Student lr=0.1171 | Student Train Acc: 57.880 | Time: 139.562 |
+[Eval] Epoch: 28 | Teacher Test Loss: 1.298 | Teacher Test Acc: 68.130 | Student Test Loss: 1.809 | Student Test Acc: 54.390 | Teacher Test F1: 0.679 | Student Test F1: 0.540 | Teacher Top 5 Accuracy: 0.908 | Student Top 5 Accuracy: 0.819 | Time: 2.191 | 
+Running student landscape probe...
+[LR policy] epoch=28 output=residual_log policy_pred=-0.265005 predicted_lr=0.073955 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.090786
+[Train] Epoch: 29 | Teacher lr=0.0955 | Teacher Loss: 2.037 | Teacher Train Acc: 65.210 | Student lr=0.0908 | Student Train Acc: 59.080 | Time: 138.565 |
+[Eval] Epoch: 29 | Teacher Test Loss: 1.242 | Teacher Test Acc: 68.800 | Student Test Loss: 1.631 | Student Test Acc: 58.250 | Teacher Test F1: 0.688 | Student Test F1: 0.584 | Teacher Top 5 Accuracy: 0.912 | Student Top 5 Accuracy: 0.848 | Time: 2.453 | 
+Running student landscape probe...
+[LR policy] epoch=29 output=residual_log policy_pred=-0.266365 predicted_lr=0.054937 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.067513
+[Train] Epoch: 30 | Teacher lr=0.0708 | Teacher Loss: 1.964 | Teacher Train Acc: 66.624 | Student lr=0.0675 | Student Train Acc: 60.254 | Time: 134.677 |
+[Eval] Epoch: 30 | Teacher Test Loss: 1.234 | Teacher Test Acc: 69.260 | Student Test Loss: 1.567 | Student Test Acc: 59.710 | Teacher Test F1: 0.690 | Student Test F1: 0.597 | Teacher Top 5 Accuracy: 0.913 | Student Top 5 Accuracy: 0.861 | Time: 2.448 | 
+Running student landscape probe...
+[LR policy] epoch=30 output=residual_log policy_pred=-0.266508 predicted_lr=0.038660 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.047514
+[Train] Epoch: 31 | Teacher lr=0.0495 | Teacher Loss: 1.888 | Teacher Train Acc: 68.182 | Student lr=0.0475 | Student Train Acc: 61.450 | Time: 134.165 |
+[Eval] Epoch: 31 | Teacher Test Loss: 1.221 | Teacher Test Acc: 69.550 | Student Test Loss: 1.529 | Student Test Acc: 60.830 | Teacher Test F1: 0.696 | Student Test F1: 0.609 | Teacher Top 5 Accuracy: 0.914 | Student Top 5 Accuracy: 0.865 | Time: 2.357 | 
+Running student landscape probe...
+[LR policy] epoch=31 output=residual_log policy_pred=-0.266255 predicted_lr=0.025172 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.030931
+[Train] Epoch: 32 | Teacher lr=0.0319 | Teacher Loss: 1.819 | Teacher Train Acc: 69.648 | Student lr=0.0309 | Student Train Acc: 62.788 | Time: 134.088 |
+[Eval] Epoch: 32 | Teacher Test Loss: 1.193 | Teacher Test Acc: 70.470 | Student Test Loss: 1.489 | Student Test Acc: 61.850 | Teacher Test F1: 0.704 | Student Test F1: 0.619 | Teacher Top 5 Accuracy: 0.915 | Student Top 5 Accuracy: 0.868 | Time: 2.297 | 
+Running student landscape probe...
+[LR policy] epoch=32 output=residual_log policy_pred=-0.264907 predicted_lr=0.014579 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.017895
+[Train] Epoch: 33 | Teacher lr=0.0180 | Teacher Loss: 1.754 | Teacher Train Acc: 70.840 | Student lr=0.0179 | Student Train Acc: 63.800 | Time: 140.846 |
+[Eval] Epoch: 33 | Teacher Test Loss: 1.190 | Teacher Test Acc: 70.360 | Student Test Loss: 1.465 | Student Test Acc: 62.670 | Teacher Test F1: 0.703 | Student Test F1: 0.627 | Teacher Top 5 Accuracy: 0.915 | Student Top 5 Accuracy: 0.874 | Time: 2.048 | 
+Running student landscape probe...
+[LR policy] epoch=33 output=residual_log policy_pred=-0.264744 predicted_lr=0.006927 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.008502
+[Train] Epoch: 34 | Teacher lr=0.0080 | Teacher Loss: 1.705 | Teacher Train Acc: 71.700 | Student lr=0.0085 | Student Train Acc: 65.020 | Time: 134.280 |
+[Eval] Epoch: 34 | Teacher Test Loss: 1.172 | Teacher Test Acc: 70.900 | Student Test Loss: 1.437 | Student Test Acc: 63.790 | Teacher Test F1: 0.709 | Student Test F1: 0.637 | Teacher Top 5 Accuracy: 0.918 | Student Top 5 Accuracy: 0.877 | Time: 2.277 | 
+Running student landscape probe...
+[LR policy] epoch=34 output=residual_log policy_pred=-0.264026 predicted_lr=0.002312 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.002836
+[Train] Epoch: 35 | Teacher lr=0.0020 | Teacher Loss: 1.675 | Teacher Train Acc: 72.400 | Student lr=0.0028 | Student Train Acc: 65.560 | Time: 134.236 |
+[Eval] Epoch: 35 | Teacher Test Loss: 1.171 | Teacher Test Acc: 71.080 | Student Test Loss: 1.420 | Student Test Acc: 63.660 | Teacher Test F1: 0.710 | Student Test F1: 0.636 | Teacher Top 5 Accuracy: 0.917 | Student Top 5 Accuracy: 0.878 | Time: 2.300 | 
+Running student landscape probe...
+[LR policy] epoch=35 output=residual_log policy_pred=-0.264958 predicted_lr=0.001000 cosine_blend=0.750 lr_ema=0.000 cosine_after=0 next_student_lr=0.001000
+ckpt location: ckpt/robust12h_mlspace/O5_patchtst_noiseon15_seed2_35ep.pt

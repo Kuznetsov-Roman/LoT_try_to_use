@@ -1,0 +1,252 @@
+depth_list: [110, 20]
+Dataset information: cifar100	 50000 images for training 	 10000 images for testing	
+teacher depth: 110
+student depth: 20
+Total number of teacher parameters: 1,169,972
+Total number of student parameters: 278,132
+Snapshots will be saved to: snapshots/sota_hypergrad_mlspace/hypergrad_hb_fast_seed2_60ep
+==== train and evaluate unequal restart ====
+[scheduler] Hypergradient-HB active init_lr=0.3 beta=0.05 momentum=0.9
+[Eval] Epoch: 0 | Teacher Test Loss: 11623.433 | Teacher Test Acc: 1.000 | Student Test Loss: 6.044 | Student Test Acc: 1.110 | Teacher Test F1: 0.000 | Student Test F1: 0.000 | Teacher Top 5 Accuracy: 0.049 | Student Top 5 Accuracy: 0.052 | Time: 2.947 | 
+Running student landscape probe...
+[Train] Epoch: 1 | Teacher lr=1.0000 | Teacher Loss: 3.972 | Teacher Train Acc: 11.008 | Student lr=0.0937 | Student Train Acc: 19.682 | Time: 141.743 |
+[Eval] Epoch: 1 | Teacher Test Loss: 3.631 | Teacher Test Acc: 13.180 | Student Test Loss: 2.853 | Student Test Acc: 27.090 | Teacher Test F1: 0.099 | Student Test F1: 0.252 | Teacher Top 5 Accuracy: 0.400 | Student Top 5 Accuracy: 0.599 | Time: 2.652 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=1 signal=-0.048787 velocity=0.027334 updates=783 new_lr=0.093677
+[Train] Epoch: 2 | Teacher lr=0.9993 | Teacher Loss: 3.157 | Teacher Train Acc: 25.612 | Student lr=0.1242 | Student Train Acc: 37.904 | Time: 138.185 |
+[Eval] Epoch: 2 | Teacher Test Loss: 3.081 | Teacher Test Acc: 24.160 | Student Test Loss: 2.389 | Student Test Acc: 36.390 | Teacher Test F1: 0.221 | Student Test F1: 0.346 | Teacher Top 5 Accuracy: 0.563 | Student Top 5 Accuracy: 0.701 | Time: 2.435 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=2 signal=0.009652 velocity=0.026537 updates=1567 new_lr=0.124159
+[Train] Epoch: 3 | Teacher lr=0.9973 | Teacher Loss: 2.722 | Teacher Train Acc: 34.766 | Student lr=0.1699 | Student Train Acc: 46.960 | Time: 141.652 |
+[Eval] Epoch: 3 | Teacher Test Loss: 2.538 | Teacher Test Acc: 32.530 | Student Test Loss: 2.908 | Student Test Acc: 28.630 | Teacher Test F1: 0.302 | Student Test F1: 0.275 | Teacher Top 5 Accuracy: 0.673 | Student Top 5 Accuracy: 0.600 | Time: 2.205 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=3 signal=-0.025901 velocity=-0.016261 updates=2351 new_lr=0.169882
+[Train] Epoch: 4 | Teacher lr=0.9938 | Teacher Loss: 2.436 | Teacher Train Acc: 41.406 | Student lr=0.2285 | Student Train Acc: 52.174 | Time: 138.609 |
+[Eval] Epoch: 4 | Teacher Test Loss: 2.458 | Teacher Test Acc: 36.030 | Student Test Loss: 2.364 | Student Test Acc: 38.880 | Teacher Test F1: 0.346 | Student Test F1: 0.386 | Teacher Top 5 Accuracy: 0.698 | Student Top 5 Accuracy: 0.720 | Time: 2.229 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=4 signal=-0.073650 velocity=-0.012246 updates=3135 new_lr=0.228471
+[Train] Epoch: 5 | Teacher lr=0.9891 | Teacher Loss: 2.217 | Teacher Train Acc: 46.530 | Student lr=0.2804 | Student Train Acc: 55.600 | Time: 141.161 |
+[Eval] Epoch: 5 | Teacher Test Loss: 2.333 | Teacher Test Acc: 39.880 | Student Test Loss: 2.121 | Student Test Acc: 43.890 | Teacher Test F1: 0.385 | Student Test F1: 0.430 | Teacher Top 5 Accuracy: 0.726 | Student Top 5 Accuracy: 0.755 | Time: 2.136 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=5 signal=0.043166 velocity=0.001975 updates=3919 new_lr=0.280446
+[Train] Epoch: 6 | Teacher lr=0.9830 | Teacher Loss: 2.094 | Teacher Train Acc: 49.736 | Student lr=0.3515 | Student Train Acc: 57.716 | Time: 139.954 |
+[Eval] Epoch: 6 | Teacher Test Loss: 2.472 | Teacher Test Acc: 36.860 | Student Test Loss: 2.273 | Student Test Acc: 41.140 | Teacher Test F1: 0.355 | Student Test F1: 0.402 | Teacher Top 5 Accuracy: 0.692 | Student Top 5 Accuracy: 0.731 | Time: 2.162 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=6 signal=-0.014189 velocity=-0.006125 updates=4703 new_lr=0.351500
+[Train] Epoch: 7 | Teacher lr=0.9755 | Teacher Loss: 2.163 | Teacher Train Acc: 49.034 | Student lr=0.4263 | Student Train Acc: 58.070 | Time: 139.324 |
+[Eval] Epoch: 7 | Teacher Test Loss: 2.054 | Teacher Test Acc: 43.830 | Student Test Loss: 2.035 | Student Test Acc: 45.940 | Teacher Test F1: 0.442 | Student Test F1: 0.461 | Teacher Top 5 Accuracy: 0.774 | Student Top 5 Accuracy: 0.777 | Time: 2.241 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=7 signal=0.041299 velocity=-0.008353 updates=5487 new_lr=0.426307
+[Train] Epoch: 8 | Teacher lr=0.9668 | Teacher Loss: 1.931 | Teacher Train Acc: 54.168 | Student lr=0.4669 | Student Train Acc: 60.468 | Time: 139.150 |
+[Eval] Epoch: 8 | Teacher Test Loss: 2.015 | Teacher Test Acc: 46.390 | Student Test Loss: 1.883 | Student Test Acc: 48.470 | Teacher Test F1: 0.455 | Student Test F1: 0.481 | Teacher Top 5 Accuracy: 0.775 | Student Top 5 Accuracy: 0.794 | Time: 2.228 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=8 signal=-0.020935 velocity=-0.022383 updates=6271 new_lr=0.466901
+[Train] Epoch: 9 | Teacher lr=0.9568 | Teacher Loss: 1.861 | Teacher Train Acc: 56.084 | Student lr=0.4763 | Student Train Acc: 61.330 | Time: 139.011 |
+[Eval] Epoch: 9 | Teacher Test Loss: 2.006 | Teacher Test Acc: 46.680 | Student Test Loss: 2.305 | Student Test Acc: 41.430 | Teacher Test F1: 0.471 | Student Test F1: 0.416 | Teacher Top 5 Accuracy: 0.789 | Student Top 5 Accuracy: 0.731 | Time: 2.105 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=9 signal=0.007759 velocity=-0.005233 updates=7055 new_lr=0.476259
+[Train] Epoch: 10 | Teacher lr=0.9455 | Teacher Loss: 1.821 | Teacher Train Acc: 57.046 | Student lr=0.5256 | Student Train Acc: 61.886 | Time: 142.067 |
+[Eval] Epoch: 10 | Teacher Test Loss: 1.785 | Teacher Test Acc: 52.150 | Student Test Loss: 2.319 | Student Test Acc: 41.920 | Teacher Test F1: 0.513 | Student Test F1: 0.419 | Teacher Top 5 Accuracy: 0.819 | Student Top 5 Accuracy: 0.731 | Time: 2.194 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=10 signal=-0.003351 velocity=-0.011606 updates=7839 new_lr=0.525569
+[Train] Epoch: 11 | Teacher lr=0.9330 | Teacher Loss: 1.778 | Teacher Train Acc: 58.324 | Student lr=0.5066 | Student Train Acc: 62.644 | Time: 141.787 |
+[Eval] Epoch: 11 | Teacher Test Loss: 1.946 | Teacher Test Acc: 48.090 | Student Test Loss: 2.049 | Student Test Acc: 46.080 | Teacher Test F1: 0.468 | Student Test F1: 0.455 | Teacher Top 5 Accuracy: 0.792 | Student Top 5 Accuracy: 0.782 | Time: 2.196 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=11 signal=-0.052650 velocity=-0.010370 updates=8623 new_lr=0.506586
+[Train] Epoch: 12 | Teacher lr=0.9193 | Teacher Loss: 1.736 | Teacher Train Acc: 59.248 | Student lr=0.5175 | Student Train Acc: 63.166 | Time: 140.199 |
+[Eval] Epoch: 12 | Teacher Test Loss: 1.681 | Teacher Test Acc: 53.900 | Student Test Loss: 1.949 | Student Test Acc: 47.640 | Teacher Test F1: 0.533 | Student Test F1: 0.480 | Teacher Top 5 Accuracy: 0.834 | Student Top 5 Accuracy: 0.796 | Time: 2.276 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=12 signal=0.054667 velocity=0.003451 updates=9407 new_lr=0.517472
+[Train] Epoch: 13 | Teacher lr=0.9045 | Teacher Loss: 1.703 | Teacher Train Acc: 60.330 | Student lr=0.5388 | Student Train Acc: 63.634 | Time: 144.720 |
+[Eval] Epoch: 13 | Teacher Test Loss: 1.634 | Teacher Test Acc: 54.050 | Student Test Loss: 2.026 | Student Test Acc: 46.020 | Teacher Test F1: 0.536 | Student Test F1: 0.459 | Teacher Top 5 Accuracy: 0.843 | Student Top 5 Accuracy: 0.782 | Time: 2.184 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=13 signal=0.027045 velocity=-0.003826 updates=10191 new_lr=0.538840
+[Train] Epoch: 14 | Teacher lr=0.8886 | Teacher Loss: 1.672 | Teacher Train Acc: 61.104 | Student lr=0.5482 | Student Train Acc: 63.742 | Time: 139.678 |
+[Eval] Epoch: 14 | Teacher Test Loss: 1.825 | Teacher Test Acc: 50.070 | Student Test Loss: 2.064 | Student Test Acc: 45.450 | Teacher Test F1: 0.501 | Student Test F1: 0.461 | Teacher Top 5 Accuracy: 0.811 | Student Top 5 Accuracy: 0.781 | Time: 2.169 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=14 signal=0.002121 velocity=-0.007798 updates=10975 new_lr=0.548172
+[Train] Epoch: 15 | Teacher lr=0.8716 | Teacher Loss: 1.648 | Teacher Train Acc: 62.082 | Student lr=0.5496 | Student Train Acc: 64.490 | Time: 142.010 |
+[Eval] Epoch: 15 | Teacher Test Loss: 1.993 | Teacher Test Acc: 48.140 | Student Test Loss: 2.094 | Student Test Acc: 47.220 | Teacher Test F1: 0.485 | Student Test F1: 0.474 | Teacher Top 5 Accuracy: 0.782 | Student Top 5 Accuracy: 0.765 | Time: 2.130 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=15 signal=-0.008183 velocity=-0.009736 updates=11759 new_lr=0.549562
+[Train] Epoch: 16 | Teacher lr=0.8536 | Teacher Loss: 1.621 | Teacher Train Acc: 62.720 | Student lr=0.5495 | Student Train Acc: 64.728 | Time: 141.090 |
+[Eval] Epoch: 16 | Teacher Test Loss: 1.576 | Teacher Test Acc: 55.500 | Student Test Loss: 2.166 | Student Test Acc: 43.170 | Teacher Test F1: 0.551 | Student Test F1: 0.439 | Teacher Top 5 Accuracy: 0.852 | Student Top 5 Accuracy: 0.760 | Time: 2.044 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=16 signal=-0.064660 velocity=-0.019717 updates=12543 new_lr=0.549514
+[Train] Epoch: 17 | Teacher lr=0.8346 | Teacher Loss: 1.590 | Teacher Train Acc: 63.520 | Student lr=0.5480 | Student Train Acc: 64.928 | Time: 141.484 |
+[Eval] Epoch: 17 | Teacher Test Loss: 1.962 | Teacher Test Acc: 46.720 | Student Test Loss: 1.998 | Student Test Acc: 46.280 | Teacher Test F1: 0.469 | Student Test F1: 0.461 | Teacher Top 5 Accuracy: 0.792 | Student Top 5 Accuracy: 0.778 | Time: 2.340 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=17 signal=-0.002123 velocity=-0.012355 updates=13327 new_lr=0.548025
+[Train] Epoch: 18 | Teacher lr=0.8147 | Teacher Loss: 1.584 | Teacher Train Acc: 63.820 | Student lr=0.5702 | Student Train Acc: 65.328 | Time: 140.989 |
+[Eval] Epoch: 18 | Teacher Test Loss: 1.742 | Teacher Test Acc: 52.840 | Student Test Loss: 1.907 | Student Test Acc: 48.560 | Teacher Test F1: 0.524 | Student Test F1: 0.482 | Teacher Top 5 Accuracy: 0.827 | Student Top 5 Accuracy: 0.797 | Time: 2.327 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=18 signal=0.010464 velocity=0.005440 updates=14111 new_lr=0.570184
+[Train] Epoch: 19 | Teacher lr=0.7939 | Teacher Loss: 1.548 | Teacher Train Acc: 64.976 | Student lr=0.5568 | Student Train Acc: 65.304 | Time: 141.777 |
+[Eval] Epoch: 19 | Teacher Test Loss: 1.857 | Teacher Test Acc: 50.020 | Student Test Loss: 1.982 | Student Test Acc: 47.590 | Teacher Test F1: 0.493 | Student Test F1: 0.475 | Teacher Top 5 Accuracy: 0.810 | Student Top 5 Accuracy: 0.791 | Time: 1.979 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=19 signal=0.051145 velocity=-0.019149 updates=14895 new_lr=0.556774
+[Train] Epoch: 20 | Teacher lr=0.7723 | Teacher Loss: 1.521 | Teacher Train Acc: 65.556 | Student lr=0.5664 | Student Train Acc: 65.400 | Time: 141.485 |
+[Eval] Epoch: 20 | Teacher Test Loss: 1.571 | Teacher Test Acc: 55.890 | Student Test Loss: 2.652 | Student Test Acc: 40.260 | Teacher Test F1: 0.561 | Student Test F1: 0.419 | Teacher Top 5 Accuracy: 0.850 | Student Top 5 Accuracy: 0.688 | Time: 2.312 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=20 signal=-0.026560 velocity=-0.001087 updates=15679 new_lr=0.566396
+[Train] Epoch: 21 | Teacher lr=0.7500 | Teacher Loss: 1.506 | Teacher Train Acc: 65.982 | Student lr=0.5794 | Student Train Acc: 65.484 | Time: 141.920 |
+[Eval] Epoch: 21 | Teacher Test Loss: 1.536 | Teacher Test Acc: 56.690 | Student Test Loss: 1.989 | Student Test Acc: 48.220 | Teacher Test F1: 0.563 | Student Test F1: 0.489 | Teacher Top 5 Accuracy: 0.854 | Student Top 5 Accuracy: 0.784 | Time: 2.245 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=21 signal=0.008426 velocity=-0.009667 updates=16463 new_lr=0.579401
+[Train] Epoch: 22 | Teacher lr=0.7270 | Teacher Loss: 1.482 | Teacher Train Acc: 66.774 | Student lr=0.5760 | Student Train Acc: 65.616 | Time: 142.345 |
+[Eval] Epoch: 22 | Teacher Test Loss: 1.544 | Teacher Test Acc: 57.080 | Student Test Loss: 2.593 | Student Test Acc: 34.350 | Teacher Test F1: 0.571 | Student Test F1: 0.347 | Teacher Top 5 Accuracy: 0.854 | Student Top 5 Accuracy: 0.678 | Time: 2.086 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=22 signal=0.037377 velocity=-0.005819 updates=17247 new_lr=0.576019
+[Train] Epoch: 23 | Teacher lr=0.7034 | Teacher Loss: 1.458 | Teacher Train Acc: 67.482 | Student lr=0.5886 | Student Train Acc: 65.820 | Time: 144.643 |
+[Eval] Epoch: 23 | Teacher Test Loss: 1.411 | Teacher Test Acc: 59.760 | Student Test Loss: 1.988 | Student Test Acc: 48.210 | Teacher Test F1: 0.594 | Student Test F1: 0.479 | Teacher Top 5 Accuracy: 0.875 | Student Top 5 Accuracy: 0.783 | Time: 2.181 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=23 signal=0.047937 velocity=-0.011920 updates=18031 new_lr=0.588605
+[Train] Epoch: 24 | Teacher lr=0.6792 | Teacher Loss: 1.439 | Teacher Train Acc: 68.166 | Student lr=0.5686 | Student Train Acc: 66.050 | Time: 142.912 |
+[Eval] Epoch: 24 | Teacher Test Loss: 1.495 | Teacher Test Acc: 58.470 | Student Test Loss: 2.645 | Student Test Acc: 38.500 | Teacher Test F1: 0.578 | Student Test F1: 0.392 | Teacher Top 5 Accuracy: 0.861 | Student Top 5 Accuracy: 0.700 | Time: 2.058 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=24 signal=-0.000765 velocity=0.014627 updates=18815 new_lr=0.568617
+[Train] Epoch: 25 | Teacher lr=0.6545 | Teacher Loss: 1.424 | Teacher Train Acc: 68.732 | Student lr=0.5921 | Student Train Acc: 65.860 | Time: 139.788 |
+[Eval] Epoch: 25 | Teacher Test Loss: 1.498 | Teacher Test Acc: 57.890 | Student Test Loss: 2.369 | Student Test Acc: 40.560 | Teacher Test F1: 0.577 | Student Test F1: 0.415 | Teacher Top 5 Accuracy: 0.861 | Student Top 5 Accuracy: 0.724 | Time: 2.131 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=25 signal=-0.018469 velocity=-0.004429 updates=19599 new_lr=0.592074
+[Train] Epoch: 26 | Teacher lr=0.6294 | Teacher Loss: 1.402 | Teacher Train Acc: 69.372 | Student lr=0.5988 | Student Train Acc: 65.766 | Time: 141.093 |
+[Eval] Epoch: 26 | Teacher Test Loss: 1.431 | Teacher Test Acc: 59.270 | Student Test Loss: 1.718 | Student Test Acc: 52.310 | Teacher Test F1: 0.595 | Student Test F1: 0.530 | Teacher Top 5 Accuracy: 0.873 | Student Top 5 Accuracy: 0.836 | Time: 2.238 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=26 signal=0.013764 velocity=-0.010771 updates=20383 new_lr=0.598813
+[Train] Epoch: 27 | Teacher lr=0.6040 | Teacher Loss: 1.385 | Teacher Train Acc: 69.840 | Student lr=0.6119 | Student Train Acc: 66.150 | Time: 142.767 |
+[Eval] Epoch: 27 | Teacher Test Loss: 1.468 | Teacher Test Acc: 58.260 | Student Test Loss: 1.722 | Student Test Acc: 53.280 | Teacher Test F1: 0.578 | Student Test F1: 0.530 | Teacher Top 5 Accuracy: 0.866 | Student Top 5 Accuracy: 0.829 | Time: 2.333 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=27 signal=0.037462 velocity=-0.006034 updates=21167 new_lr=0.611909
+[Train] Epoch: 28 | Teacher lr=0.5782 | Teacher Loss: 1.358 | Teacher Train Acc: 70.606 | Student lr=0.5907 | Student Train Acc: 66.400 | Time: 141.691 |
+[Eval] Epoch: 28 | Teacher Test Loss: 1.317 | Teacher Test Acc: 62.600 | Student Test Loss: 2.110 | Student Test Acc: 47.740 | Teacher Test F1: 0.623 | Student Test F1: 0.474 | Teacher Top 5 Accuracy: 0.885 | Student Top 5 Accuracy: 0.778 | Time: 2.074 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=28 signal=-0.029143 velocity=-0.004704 updates=21951 new_lr=0.590748
+[Train] Epoch: 29 | Teacher lr=0.5523 | Teacher Loss: 1.330 | Teacher Train Acc: 71.510 | Student lr=0.5947 | Student Train Acc: 66.310 | Time: 142.797 |
+[Eval] Epoch: 29 | Teacher Test Loss: 1.302 | Teacher Test Acc: 63.360 | Student Test Loss: 1.837 | Student Test Acc: 50.780 | Teacher Test F1: 0.630 | Student Test F1: 0.499 | Teacher Top 5 Accuracy: 0.887 | Student Top 5 Accuracy: 0.814 | Time: 2.097 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=29 signal=0.027717 velocity=-0.004807 updates=22735 new_lr=0.594681
+[Train] Epoch: 30 | Teacher lr=0.5262 | Teacher Loss: 1.313 | Teacher Train Acc: 72.202 | Student lr=0.5908 | Student Train Acc: 66.642 | Time: 141.529 |
+[Eval] Epoch: 30 | Teacher Test Loss: 1.281 | Teacher Test Acc: 63.190 | Student Test Loss: 1.965 | Student Test Acc: 48.300 | Teacher Test F1: 0.626 | Student Test F1: 0.480 | Teacher Top 5 Accuracy: 0.890 | Student Top 5 Accuracy: 0.792 | Time: 2.238 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=30 signal=0.082138 velocity=0.007016 updates=23519 new_lr=0.590767
+[Train] Epoch: 31 | Teacher lr=0.5000 | Teacher Loss: 1.296 | Teacher Train Acc: 72.596 | Student lr=0.6083 | Student Train Acc: 66.664 | Time: 140.740 |
+[Eval] Epoch: 31 | Teacher Test Loss: 1.308 | Teacher Test Acc: 62.800 | Student Test Loss: 2.027 | Student Test Acc: 47.280 | Teacher Test F1: 0.632 | Student Test F1: 0.473 | Teacher Top 5 Accuracy: 0.894 | Student Top 5 Accuracy: 0.772 | Time: 1.972 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=31 signal=0.034957 velocity=-0.009876 updates=24303 new_lr=0.608338
+[Train] Epoch: 32 | Teacher lr=0.4738 | Teacher Loss: 1.270 | Teacher Train Acc: 73.496 | Student lr=0.5979 | Student Train Acc: 66.784 | Time: 140.833 |
+[Eval] Epoch: 32 | Teacher Test Loss: 1.253 | Teacher Test Acc: 64.170 | Student Test Loss: 2.726 | Student Test Acc: 39.160 | Teacher Test F1: 0.645 | Student Test F1: 0.414 | Teacher Top 5 Accuracy: 0.895 | Student Top 5 Accuracy: 0.698 | Time: 2.102 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=32 signal=-0.002614 velocity=-0.004499 updates=25087 new_lr=0.597937
+[Train] Epoch: 33 | Teacher lr=0.4477 | Teacher Loss: 1.249 | Teacher Train Acc: 74.114 | Student lr=0.5913 | Student Train Acc: 66.720 | Time: 140.999 |
+[Eval] Epoch: 33 | Teacher Test Loss: 1.264 | Teacher Test Acc: 64.130 | Student Test Loss: 1.876 | Student Test Acc: 49.910 | Teacher Test F1: 0.639 | Student Test F1: 0.495 | Teacher Top 5 Accuracy: 0.892 | Student Top 5 Accuracy: 0.799 | Time: 2.154 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=33 signal=0.012285 velocity=0.013743 updates=25871 new_lr=0.591254
+[Train] Epoch: 34 | Teacher lr=0.4218 | Teacher Loss: 1.224 | Teacher Train Acc: 75.004 | Student lr=0.6172 | Student Train Acc: 66.688 | Time: 139.423 |
+[Eval] Epoch: 34 | Teacher Test Loss: 1.187 | Teacher Test Acc: 65.250 | Student Test Loss: 2.661 | Student Test Acc: 36.550 | Teacher Test F1: 0.650 | Student Test F1: 0.373 | Teacher Top 5 Accuracy: 0.905 | Student Top 5 Accuracy: 0.690 | Time: 2.217 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=34 signal=0.064175 velocity=0.009093 updates=26655 new_lr=0.617181
+[Train] Epoch: 35 | Teacher lr=0.3960 | Teacher Loss: 1.209 | Teacher Train Acc: 75.764 | Student lr=0.6056 | Student Train Acc: 66.606 | Time: 141.262 |
+[Eval] Epoch: 35 | Teacher Test Loss: 1.165 | Teacher Test Acc: 66.570 | Student Test Loss: 1.996 | Student Test Acc: 48.390 | Teacher Test F1: 0.665 | Student Test F1: 0.476 | Teacher Top 5 Accuracy: 0.907 | Student Top 5 Accuracy: 0.785 | Time: 2.025 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=35 signal=-0.018799 velocity=-0.008755 updates=27439 new_lr=0.605603
+[Train] Epoch: 36 | Teacher lr=0.3706 | Teacher Loss: 1.171 | Teacher Train Acc: 76.894 | Student lr=0.5925 | Student Train Acc: 66.666 | Time: 138.614 |
+[Eval] Epoch: 36 | Teacher Test Loss: 1.227 | Teacher Test Acc: 64.980 | Student Test Loss: 1.766 | Student Test Acc: 51.800 | Teacher Test F1: 0.649 | Student Test F1: 0.522 | Teacher Top 5 Accuracy: 0.898 | Student Top 5 Accuracy: 0.824 | Time: 2.232 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=36 signal=-0.009917 velocity=-0.012130 updates=28223 new_lr=0.592513
+[Train] Epoch: 37 | Teacher lr=0.3455 | Teacher Loss: 1.148 | Teacher Train Acc: 77.668 | Student lr=0.5891 | Student Train Acc: 67.122 | Time: 140.573 |
+[Eval] Epoch: 37 | Teacher Test Loss: 1.127 | Teacher Test Acc: 67.670 | Student Test Loss: 2.439 | Student Test Acc: 41.000 | Teacher Test F1: 0.679 | Student Test F1: 0.416 | Teacher Top 5 Accuracy: 0.913 | Student Top 5 Accuracy: 0.715 | Time: 2.282 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=37 signal=0.025215 velocity=0.002738 updates=29007 new_lr=0.589094
+[Train] Epoch: 38 | Teacher lr=0.3208 | Teacher Loss: 1.124 | Teacher Train Acc: 78.606 | Student lr=0.6205 | Student Train Acc: 66.734 | Time: 140.303 |
+[Eval] Epoch: 38 | Teacher Test Loss: 1.154 | Teacher Test Acc: 66.880 | Student Test Loss: 2.705 | Student Test Acc: 36.400 | Teacher Test F1: 0.667 | Student Test F1: 0.364 | Teacher Top 5 Accuracy: 0.908 | Student Top 5 Accuracy: 0.674 | Time: 2.084 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=38 signal=-0.007350 velocity=-0.008148 updates=29791 new_lr=0.620526
+[Train] Epoch: 39 | Teacher lr=0.2966 | Teacher Loss: 1.104 | Teacher Train Acc: 79.498 | Student lr=0.6432 | Student Train Acc: 66.700 | Time: 139.831 |
+[Eval] Epoch: 39 | Teacher Test Loss: 1.102 | Teacher Test Acc: 67.920 | Student Test Loss: 2.407 | Student Test Acc: 41.250 | Teacher Test F1: 0.679 | Student Test F1: 0.420 | Teacher Top 5 Accuracy: 0.916 | Student Top 5 Accuracy: 0.734 | Time: 2.221 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=39 signal=-0.010450 velocity=-0.003598 updates=30575 new_lr=0.643235
+[Train] Epoch: 40 | Teacher lr=0.2730 | Teacher Loss: 1.082 | Teacher Train Acc: 80.632 | Student lr=0.6517 | Student Train Acc: 66.454 | Time: 144.365 |
+[Eval] Epoch: 40 | Teacher Test Loss: 1.109 | Teacher Test Acc: 68.010 | Student Test Loss: 2.457 | Student Test Acc: 41.690 | Teacher Test F1: 0.680 | Student Test F1: 0.416 | Teacher Top 5 Accuracy: 0.915 | Student Top 5 Accuracy: 0.719 | Time: 1.929 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=40 signal=-0.016617 velocity=-0.007813 updates=31359 new_lr=0.651747
+[Train] Epoch: 41 | Teacher lr=0.2500 | Teacher Loss: 1.054 | Teacher Train Acc: 81.640 | Student lr=0.6667 | Student Train Acc: 66.328 | Time: 140.628 |
+[Eval] Epoch: 41 | Teacher Test Loss: 1.049 | Teacher Test Acc: 69.230 | Student Test Loss: 1.847 | Student Test Acc: 50.560 | Teacher Test F1: 0.693 | Student Test F1: 0.507 | Teacher Top 5 Accuracy: 0.924 | Student Top 5 Accuracy: 0.817 | Time: 2.276 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=41 signal=0.057208 velocity=-0.000322 updates=32143 new_lr=0.666695
+[Train] Epoch: 42 | Teacher lr=0.2277 | Teacher Loss: 1.029 | Teacher Train Acc: 82.738 | Student lr=0.6477 | Student Train Acc: 66.854 | Time: 142.387 |
+[Eval] Epoch: 42 | Teacher Test Loss: 1.054 | Teacher Test Acc: 69.840 | Student Test Loss: 2.445 | Student Test Acc: 41.820 | Teacher Test F1: 0.695 | Student Test F1: 0.427 | Teacher Top 5 Accuracy: 0.921 | Student Top 5 Accuracy: 0.723 | Time: 2.171 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=42 signal=0.008054 velocity=-0.002729 updates=32927 new_lr=0.647682
+[Train] Epoch: 43 | Teacher lr=0.2061 | Teacher Loss: 1.004 | Teacher Train Acc: 83.784 | Student lr=0.6703 | Student Train Acc: 66.728 | Time: 140.039 |
+[Eval] Epoch: 43 | Teacher Test Loss: 1.003 | Teacher Test Acc: 71.170 | Student Test Loss: 2.043 | Student Test Acc: 47.130 | Teacher Test F1: 0.711 | Student Test F1: 0.476 | Teacher Top 5 Accuracy: 0.926 | Student Top 5 Accuracy: 0.793 | Time: 2.304 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=43 signal=0.041926 velocity=0.001282 updates=33711 new_lr=0.670313
+[Train] Epoch: 44 | Teacher lr=0.1853 | Teacher Loss: 0.979 | Teacher Train Acc: 85.060 | Student lr=0.6913 | Student Train Acc: 66.394 | Time: 141.777 |
+[Eval] Epoch: 44 | Teacher Test Loss: 1.005 | Teacher Test Acc: 71.200 | Student Test Loss: 2.050 | Student Test Acc: 46.380 | Teacher Test F1: 0.711 | Student Test F1: 0.461 | Teacher Top 5 Accuracy: 0.925 | Student Top 5 Accuracy: 0.778 | Time: 1.934 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=44 signal=-0.007313 velocity=-0.003477 updates=34495 new_lr=0.691287
+[Train] Epoch: 45 | Teacher lr=0.1654 | Teacher Loss: 0.949 | Teacher Train Acc: 86.256 | Student lr=0.6822 | Student Train Acc: 66.278 | Time: 140.686 |
+[Eval] Epoch: 45 | Teacher Test Loss: 0.984 | Teacher Test Acc: 71.400 | Student Test Loss: 2.461 | Student Test Acc: 40.140 | Teacher Test F1: 0.715 | Student Test F1: 0.403 | Teacher Top 5 Accuracy: 0.929 | Student Top 5 Accuracy: 0.734 | Time: 2.159 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=45 signal=0.035174 velocity=-0.008483 updates=35279 new_lr=0.682196
+[Train] Epoch: 46 | Teacher lr=0.1464 | Teacher Loss: 0.926 | Teacher Train Acc: 87.638 | Student lr=0.6926 | Student Train Acc: 66.074 | Time: 137.797 |
+[Eval] Epoch: 46 | Teacher Test Loss: 0.958 | Teacher Test Acc: 72.440 | Student Test Loss: 2.299 | Student Test Acc: 42.030 | Teacher Test F1: 0.724 | Student Test F1: 0.427 | Teacher Top 5 Accuracy: 0.932 | Student Top 5 Accuracy: 0.746 | Time: 2.081 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=46 signal=0.072478 velocity=-0.006129 updates=36063 new_lr=0.692623
+[Train] Epoch: 47 | Teacher lr=0.1284 | Teacher Loss: 0.900 | Teacher Train Acc: 88.558 | Student lr=0.6874 | Student Train Acc: 66.338 | Time: 139.141 |
+[Eval] Epoch: 47 | Teacher Test Loss: 0.931 | Teacher Test Acc: 73.220 | Student Test Loss: 2.318 | Student Test Acc: 41.070 | Teacher Test F1: 0.732 | Student Test F1: 0.407 | Teacher Top 5 Accuracy: 0.938 | Student Top 5 Accuracy: 0.724 | Time: 2.069 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=47 signal=0.065365 velocity=0.003007 updates=36847 new_lr=0.687401
+[Train] Epoch: 48 | Teacher lr=0.1114 | Teacher Loss: 0.867 | Teacher Train Acc: 89.794 | Student lr=0.6662 | Student Train Acc: 66.712 | Time: 138.831 |
+[Eval] Epoch: 48 | Teacher Test Loss: 0.944 | Teacher Test Acc: 72.930 | Student Test Loss: 3.781 | Student Test Acc: 29.410 | Teacher Test F1: 0.730 | Student Test F1: 0.294 | Teacher Top 5 Accuracy: 0.935 | Student Top 5 Accuracy: 0.564 | Time: 2.228 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=48 signal=-0.026001 velocity=-0.012920 updates=37631 new_lr=0.666160
+[Train] Epoch: 49 | Teacher lr=0.0955 | Teacher Loss: 0.850 | Teacher Train Acc: 90.962 | Student lr=0.6980 | Student Train Acc: 66.298 | Time: 141.598 |
+[Eval] Epoch: 49 | Teacher Test Loss: 0.912 | Teacher Test Acc: 74.110 | Student Test Loss: 2.166 | Student Test Acc: 45.490 | Teacher Test F1: 0.742 | Student Test F1: 0.457 | Teacher Top 5 Accuracy: 0.937 | Student Top 5 Accuracy: 0.761 | Time: 2.126 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=49 signal=-0.021334 velocity=0.001862 updates=38415 new_lr=0.697978
+[Train] Epoch: 50 | Teacher lr=0.0807 | Teacher Loss: 0.830 | Teacher Train Acc: 91.962 | Student lr=0.6819 | Student Train Acc: 66.182 | Time: 140.789 |
+[Eval] Epoch: 50 | Teacher Test Loss: 0.887 | Teacher Test Acc: 74.810 | Student Test Loss: 1.868 | Student Test Acc: 49.620 | Teacher Test F1: 0.748 | Student Test F1: 0.494 | Teacher Top 5 Accuracy: 0.939 | Student Top 5 Accuracy: 0.811 | Time: 2.288 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=50 signal=0.027578 velocity=-0.014751 updates=39199 new_lr=0.681862
+[Train] Epoch: 51 | Teacher lr=0.0670 | Teacher Loss: 0.806 | Teacher Train Acc: 92.976 | Student lr=0.6985 | Student Train Acc: 66.516 | Time: 141.051 |
+[Eval] Epoch: 51 | Teacher Test Loss: 0.883 | Teacher Test Acc: 75.060 | Student Test Loss: 2.291 | Student Test Acc: 43.150 | Teacher Test F1: 0.750 | Student Test F1: 0.425 | Teacher Top 5 Accuracy: 0.938 | Student Top 5 Accuracy: 0.748 | Time: 2.287 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=51 signal=0.059610 velocity=-0.010174 updates=39983 new_lr=0.698499
+[Train] Epoch: 52 | Teacher lr=0.0545 | Teacher Loss: 0.787 | Teacher Train Acc: 93.994 | Student lr=0.6874 | Student Train Acc: 66.122 | Time: 139.228 |
+[Eval] Epoch: 52 | Teacher Test Loss: 0.886 | Teacher Test Acc: 75.000 | Student Test Loss: 2.459 | Student Test Acc: 41.940 | Teacher Test F1: 0.750 | Student Test F1: 0.427 | Teacher Top 5 Accuracy: 0.941 | Student Top 5 Accuracy: 0.735 | Time: 2.031 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=52 signal=0.025700 velocity=-0.005163 updates=40767 new_lr=0.687419
+[Train] Epoch: 53 | Teacher lr=0.0432 | Teacher Loss: 0.776 | Teacher Train Acc: 94.680 | Student lr=0.7012 | Student Train Acc: 65.956 | Time: 139.978 |
+[Eval] Epoch: 53 | Teacher Test Loss: 0.870 | Teacher Test Acc: 75.410 | Student Test Loss: 2.456 | Student Test Acc: 41.550 | Teacher Test F1: 0.754 | Student Test F1: 0.403 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.717 | Time: 2.182 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=53 signal=0.021331 velocity=-0.000374 updates=41551 new_lr=0.701243
+[Train] Epoch: 54 | Teacher lr=0.0332 | Teacher Loss: 0.762 | Teacher Train Acc: 95.420 | Student lr=0.7143 | Student Train Acc: 65.670 | Time: 139.140 |
+[Eval] Epoch: 54 | Teacher Test Loss: 0.873 | Teacher Test Acc: 75.250 | Student Test Loss: 2.238 | Student Test Acc: 43.200 | Teacher Test F1: 0.753 | Student Test F1: 0.424 | Teacher Top 5 Accuracy: 0.938 | Student Top 5 Accuracy: 0.749 | Time: 1.904 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=54 signal=0.004953 velocity=0.000810 updates=42335 new_lr=0.714251
+[Train] Epoch: 55 | Teacher lr=0.0245 | Teacher Loss: 0.752 | Teacher Train Acc: 95.892 | Student lr=0.7348 | Student Train Acc: 65.980 | Time: 140.281 |
+[Eval] Epoch: 55 | Teacher Test Loss: 0.866 | Teacher Test Acc: 75.580 | Student Test Loss: 2.363 | Student Test Acc: 42.280 | Teacher Test F1: 0.756 | Student Test F1: 0.416 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.726 | Time: 2.351 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=55 signal=0.042521 velocity=0.002302 updates=43119 new_lr=0.734848
+[Train] Epoch: 56 | Teacher lr=0.0170 | Teacher Loss: 0.742 | Teacher Train Acc: 96.430 | Student lr=0.7246 | Student Train Acc: 65.748 | Time: 141.317 |
+[Eval] Epoch: 56 | Teacher Test Loss: 0.863 | Teacher Test Acc: 75.570 | Student Test Loss: 2.216 | Student Test Acc: 44.110 | Teacher Test F1: 0.756 | Student Test F1: 0.453 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.760 | Time: 2.148 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=56 signal=-0.016490 velocity=-0.004575 updates=43903 new_lr=0.724629
+[Train] Epoch: 57 | Teacher lr=0.0109 | Teacher Loss: 0.740 | Teacher Train Acc: 96.532 | Student lr=0.7513 | Student Train Acc: 65.596 | Time: 140.044 |
+[Eval] Epoch: 57 | Teacher Test Loss: 0.862 | Teacher Test Acc: 75.710 | Student Test Loss: 2.363 | Student Test Acc: 40.970 | Teacher Test F1: 0.757 | Student Test F1: 0.400 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.740 | Time: 2.172 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=57 signal=0.014981 velocity=-0.001998 updates=44687 new_lr=0.751270
+[Train] Epoch: 58 | Teacher lr=0.0062 | Teacher Loss: 0.734 | Teacher Train Acc: 96.890 | Student lr=0.7548 | Student Train Acc: 65.426 | Time: 139.449 |
+[Eval] Epoch: 58 | Teacher Test Loss: 0.859 | Teacher Test Acc: 75.770 | Student Test Loss: 2.171 | Student Test Acc: 44.880 | Teacher Test F1: 0.758 | Student Test F1: 0.448 | Teacher Top 5 Accuracy: 0.941 | Student Top 5 Accuracy: 0.772 | Time: 2.098 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=58 signal=0.011193 velocity=-0.019446 updates=45471 new_lr=0.754822
+[Train] Epoch: 59 | Teacher lr=0.0027 | Teacher Loss: 0.727 | Teacher Train Acc: 97.072 | Student lr=0.7306 | Student Train Acc: 65.488 | Time: 141.487 |
+[Eval] Epoch: 59 | Teacher Test Loss: 0.859 | Teacher Test Acc: 75.910 | Student Test Loss: 1.945 | Student Test Acc: 48.160 | Teacher Test F1: 0.759 | Student Test F1: 0.482 | Teacher Top 5 Accuracy: 0.940 | Student Top 5 Accuracy: 0.795 | Time: 2.223 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=59 signal=0.012545 velocity=-0.010346 updates=46255 new_lr=0.730616
+[Train] Epoch: 60 | Teacher lr=0.0007 | Teacher Loss: 0.729 | Teacher Train Acc: 97.130 | Student lr=0.7352 | Student Train Acc: 65.558 | Time: 124.331 |
+[Eval] Epoch: 60 | Teacher Test Loss: 0.859 | Teacher Test Acc: 75.850 | Student Test Loss: 2.081 | Student Test Acc: 47.040 | Teacher Test F1: 0.759 | Student Test F1: 0.468 | Teacher Top 5 Accuracy: 0.941 | Student Top 5 Accuracy: 0.781 | Time: 0.941 | 
+Running student landscape probe...
+[hypergrad_hb] epoch=60 signal=0.018939 velocity=-0.000002 updates=47039 new_lr=0.735176
+ckpt location: ckpt/sota_hypergrad_mlspace/hypergrad_hb_fast_seed2_60ep.pt

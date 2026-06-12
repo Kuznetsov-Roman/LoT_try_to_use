@@ -1,0 +1,148 @@
+Sun May 17 18:24:07 MSK 2026
+Sun May 17 18:24:07 MSK 2026
+name, memory.total [MiB]name, memory.total [MiB]
+
+NVIDIA A100-SXM4-80GB, 81920 MiBNVIDIA A100-SXM4-80GB, 81920 MiB
+
+PHASE_START shock01_seed1 2026-05-17T15:24:07Z
+PHASE_START shock01_seed1 2026-05-17T15:24:07Z
+RUN_DONE patchtst_shock01_seed1_35ep exit=0 16:46:50
+RUN_DONE cosine_shock01_seed1_35ep exit=0 16:47:06
+RUN_DONE residgru_shock01_seed1_35ep exit=0 16:47:08
+PHASE_DONE shock01_seed1 elapsed_sec=4981 2026-05-17T16:47:08Z
+PHASE_DONE shock01_seed1 elapsed_sec=4981 2026-05-17T16:47:08Z
+PHASE_START shock05_seed1 2026-05-17T16:47:08Z
+PHASE_START shock05_seed1 2026-05-17T16:47:08Z
+RUN_DONE cosine_shock05_seed1_35ep exit=0 18:10:31
+RUN_DONE residgru_shock05_seed1_35ep exit=0 18:10:32
+RUN_DONE patchtst_shock05_seed1_35ep exit=0 18:10:32
+PHASE_DONE shock05_seed1 elapsed_sec=5004 2026-05-17T18:10:32Z
+PHASE_DONE shock05_seed1 elapsed_sec=5004 2026-05-17T18:10:32Z
+PHASE_START shock10_seed1 2026-05-17T18:10:32Z
+PHASE_START shock10_seed1 2026-05-17T18:10:32Z
+RUN_DONE patchtst_shock10_seed1_35ep exit=0 19:33:07
+RUN_DONE cosine_shock10_seed1_35ep exit=0 19:33:13
+RUN_DONE residgru_shock10_seed1_35ep exit=0 19:33:15
+PHASE_DONE shock10_seed1 elapsed_sec=4963 2026-05-17T19:33:15Z
+PHASE_DONE shock10_seed1 elapsed_sec=4963 2026-05-17T19:33:15Z
+PHASE_START shock20_seed1 2026-05-17T19:33:15Z
+PHASE_START shock20_seed1 2026-05-17T19:33:15Z
+RUN_DONE patchtst_shock20_seed1_35ep exit=0 20:56:14
+RUN_DONE cosine_shock20_seed1_35ep exit=0 20:56:14
+RUN_DONE residgru_shock20_seed1_35ep exit=0 20:56:14
+PHASE_DONE shock20_seed1 elapsed_sec=4979 2026-05-17T20:56:14Z
+PHASE_DONE shock20_seed1 elapsed_sec=4979 2026-05-17T20:56:14Z
+PHASE_START shock01_seed2 2026-05-17T20:56:14Z
+PHASE_START shock01_seed2 2026-05-17T20:56:14Z
+RUN_DONE cosine_shock01_seed2_35ep exit=0 22:18:55
+RUN_DONE patchtst_shock01_seed2_35ep exit=0 22:19:17
+RUN_DONE residgru_shock01_seed2_35ep exit=0 22:19:23
+PHASE_DONE shock01_seed2 elapsed_sec=4989 2026-05-17T22:19:23Z
+PHASE_DONE shock01_seed2 elapsed_sec=4989 2026-05-17T22:19:23Z
+PHASE_START shock05_seed2 2026-05-17T22:19:23Z
+PHASE_START shock05_seed2 2026-05-17T22:19:23Z
+RUN_DONE patchtst_shock05_seed2_35ep exit=0 23:42:41
+RUN_DONE residgru_shock05_seed2_35ep exit=0 23:42:41
+RUN_DONE cosine_shock05_seed2_35ep exit=0 23:42:44
+PHASE_DONE shock05_seed2 elapsed_sec=5001 2026-05-17T23:42:44Z
+PHASE_DONE shock05_seed2 elapsed_sec=5001 2026-05-17T23:42:44Z
+PHASE_START shock10_seed2 2026-05-17T23:42:44Z
+PHASE_START shock10_seed2 2026-05-17T23:42:44Z
+RUN_DONE patchtst_shock10_seed2_35ep exit=0 01:06:17
+RUN_DONE cosine_shock10_seed2_35ep exit=0 01:06:19
+RUN_DONE residgru_shock10_seed2_35ep exit=0 01:06:20
+PHASE_DONE shock10_seed2 elapsed_sec=5016 2026-05-18T01:06:20Z
+PHASE_DONE shock10_seed2 elapsed_sec=5016 2026-05-18T01:06:20Z
+PHASE_START shock20_seed2 2026-05-18T01:06:20Z
+PHASE_START shock20_seed2 2026-05-18T01:06:20Z
+RUN_DONE cosine_shock20_seed2_35ep exit=0 02:29:01
+RUN_DONE residgru_shock20_seed2_35ep exit=0 02:29:18
+RUN_DONE patchtst_shock20_seed2_35ep exit=0 02:29:19
+PHASE_DONE shock20_seed2 elapsed_sec=4979 2026-05-18T02:29:19Z
+PHASE_DONE shock20_seed2 elapsed_sec=4979 2026-05-18T02:29:19Z
+PHASE_START shock01_seed3 2026-05-18T02:29:19Z
+PHASE_START shock01_seed3 2026-05-18T02:29:19Z
+RUN_DONE patchtst_shock01_seed3_35ep exit=0 03:51:48
+RUN_DONE cosine_shock01_seed3_35ep exit=0 03:51:49
+RUN_DONE residgru_shock01_seed3_35ep exit=0 03:51:50
+PHASE_DONE shock01_seed3 elapsed_sec=4951 2026-05-18T03:51:50Z
+PHASE_DONE shock01_seed3 elapsed_sec=4951 2026-05-18T03:51:50Z
+PHASE_START shock05_seed3 2026-05-18T03:51:50Z
+PHASE_START shock05_seed3 2026-05-18T03:51:50Z
+RUN_DONE residgru_shock05_seed3_35ep exit=0 05:15:02
+RUN_DONE patchtst_shock05_seed3_35ep exit=0 05:15:22
+RUN_DONE cosine_shock05_seed3_35ep exit=0 05:15:22
+PHASE_DONE shock05_seed3 elapsed_sec=5012 2026-05-18T05:15:22Z
+PHASE_DONE shock05_seed3 elapsed_sec=5012 2026-05-18T05:15:22Z
+PHASE_START shock10_seed3 2026-05-18T05:15:22Z
+PHASE_START shock10_seed3 2026-05-18T05:15:22Z
+RUN_DONE cosine_shock10_seed3_35ep exit=0 06:39:04
+RUN_DONE residgru_shock10_seed3_35ep exit=0 06:39:07
+RUN_DONE patchtst_shock10_seed3_35ep exit=0 06:39:08
+PHASE_DONE shock10_seed3 elapsed_sec=5026 2026-05-18T06:39:08Z
+PHASE_DONE shock10_seed3 elapsed_sec=5026 2026-05-18T06:39:08Z
+PHASE_START shock20_seed3 2026-05-18T06:39:08Z
+PHASE_START shock20_seed3 2026-05-18T06:39:08Z
+RUN_DONE cosine_shock20_seed3_35ep exit=0 08:02:12
+RUN_DONE patchtst_shock20_seed3_35ep exit=0 08:02:13
+RUN_DONE residgru_shock20_seed3_35ep exit=0 08:02:16
+PHASE_DONE shock20_seed3 elapsed_sec=4988 2026-05-18T08:02:16Z
+PHASE_DONE shock20_seed3 elapsed_sec=4988 2026-05-18T08:02:16Z
+PHASE_START shock01_seed4 2026-05-18T08:02:16Z
+PHASE_START shock01_seed4 2026-05-18T08:02:16Z
+RUN_DONE cosine_shock01_seed4_35ep exit=0 09:24:42
+RUN_DONE residgru_shock01_seed4_35ep exit=0 09:24:53
+RUN_DONE patchtst_shock01_seed4_35ep exit=0 09:24:54
+PHASE_DONE shock01_seed4 elapsed_sec=4958 2026-05-18T09:24:54Z
+PHASE_DONE shock01_seed4 elapsed_sec=4958 2026-05-18T09:24:54Z
+PHASE_START shock05_seed4 2026-05-18T09:24:54Z
+PHASE_START shock05_seed4 2026-05-18T09:24:54Z
+RUN_DONE cosine_shock05_seed4_35ep exit=0 10:47:35
+RUN_DONE patchtst_shock05_seed4_35ep exit=0 10:47:35
+RUN_DONE residgru_shock05_seed4_35ep exit=0 10:47:42
+PHASE_DONE shock05_seed4 elapsed_sec=4968 2026-05-18T10:47:42Z
+PHASE_DONE shock05_seed4 elapsed_sec=4968 2026-05-18T10:47:42Z
+PHASE_START shock10_seed4 2026-05-18T10:47:42Z
+PHASE_START shock10_seed4 2026-05-18T10:47:42Z
+RUN_DONE patchtst_shock10_seed4_35ep exit=0 12:09:50
+RUN_DONE cosine_shock10_seed4_35ep exit=0 12:10:04
+RUN_DONE residgru_shock10_seed4_35ep exit=0 12:10:08
+PHASE_DONE shock10_seed4 elapsed_sec=4946 2026-05-18T12:10:08Z
+PHASE_DONE shock10_seed4 elapsed_sec=4946 2026-05-18T12:10:08Z
+PHASE_START shock20_seed4 2026-05-18T12:10:08Z
+PHASE_START shock20_seed4 2026-05-18T12:10:08Z
+RUN_DONE cosine_shock20_seed4_35ep exit=0 13:32:31
+RUN_DONE patchtst_shock20_seed4_35ep exit=0 13:32:32
+RUN_DONE residgru_shock20_seed4_35ep exit=0 13:32:32
+PHASE_DONE shock20_seed4 elapsed_sec=4944 2026-05-18T13:32:32Z
+PHASE_DONE shock20_seed4 elapsed_sec=4944 2026-05-18T13:32:32Z
+PHASE_START control_pair_seed5 2026-05-18T13:32:32Z
+PHASE_START control_pair_seed5 2026-05-18T13:32:32Z
+RUN_DONE patchtst_noshock_seed5_35ep exit=0 14:55:38
+RUN_DONE cosine_noshock_seed5_35ep exit=0 14:56:00
+RUN_DONE patchtst_shock05_seed5_35ep exit=0 14:56:01
+PHASE_DONE control_pair_seed5 elapsed_sec=5009 2026-05-18T14:56:01Z
+PHASE_DONE control_pair_seed5 elapsed_sec=5009 2026-05-18T14:56:01Z
+PHASE_START control_pair_seed6 2026-05-18T14:56:01Z
+PHASE_START control_pair_seed6 2026-05-18T14:56:01Z
+RUN_DONE patchtst_shock05_seed6_35ep exit=0 16:18:57
+RUN_DONE cosine_noshock_seed6_35ep exit=0 16:18:57
+RUN_DONE patchtst_noshock_seed6_35ep exit=0 16:18:57
+PHASE_DONE control_pair_seed6 elapsed_sec=4976 2026-05-18T16:18:57Z
+PHASE_DONE control_pair_seed6 elapsed_sec=4976 2026-05-18T16:18:57Z
+PHASE_START control_pair_seed7 2026-05-18T16:18:57Z
+PHASE_START control_pair_seed7 2026-05-18T16:18:57Z
+RUN_DONE cosine_noshock_seed7_35ep exit=0 17:42:45
+RUN_DONE patchtst_shock05_seed7_35ep exit=0 17:42:46
+RUN_DONE patchtst_noshock_seed7_35ep exit=0 17:42:46
+PHASE_DONE control_pair_seed7 elapsed_sec=5029 2026-05-18T17:42:46Z
+PHASE_DONE control_pair_seed7 elapsed_sec=5029 2026-05-18T17:42:46Z
+PHASE_START control_pair_seed8 2026-05-18T17:42:46Z
+PHASE_START control_pair_seed8 2026-05-18T17:42:46Z
+RUN_DONE patchtst_shock05_seed8_35ep exit=0 19:04:57
+RUN_DONE patchtst_noshock_seed8_35ep exit=0 19:05:22
+RUN_DONE cosine_noshock_seed8_35ep exit=0 19:05:22
+PHASE_DONE control_pair_seed8 elapsed_sec=4956 2026-05-18T19:05:22Z
+PHASE_DONE control_pair_seed8 elapsed_sec=4956 2026-05-18T19:05:22Z
+ROBUST12H_STARS_DONE 2026-05-18T19:05:22Z total_bundles=20
+ROBUST12H_STARS_DONE 2026-05-18T19:05:22Z total_bundles=20

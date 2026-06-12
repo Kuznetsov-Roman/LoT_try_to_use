@@ -1,0 +1,19 @@
+Thu May 14 21:32:48 MSK 2026
+name, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiB
+PHASE_START bandit_exp3_safe_seeds123 2026-05-14T18:32:48Z
+RUN_DONE bandit_exp3_safe_seed2_60ep exit=0 20:55:11
+RUN_DONE bandit_exp3_safe_seed1_60ep exit=0 20:55:11
+RUN_DONE bandit_exp3_safe_seed3_60ep exit=0 20:55:11
+PHASE_DONE bandit_exp3_safe_seeds123 elapsed_sec=8543 2026-05-14T20:55:11Z
+PHASE_START bandit_exp3_fast_seeds123 2026-05-14T20:55:11Z
+RUN_DONE bandit_exp3_fast_seed2_60ep exit=0 23:14:59
+RUN_DONE bandit_exp3_fast_seed3_60ep exit=0 23:15:01
+RUN_DONE bandit_exp3_fast_seed1_60ep exit=0 23:15:42
+PHASE_DONE bandit_exp3_fast_seeds123 elapsed_sec=8431 2026-05-14T23:15:42Z
+PHASE_START bandit_ucb_seeds123 2026-05-14T23:15:42Z
+RUN_DONE bandit_ucb_seed1_60ep exit=0 01:38:05
+RUN_DONE bandit_ucb_seed3_60ep exit=0 01:38:06
+RUN_DONE bandit_ucb_seed2_60ep exit=0 01:38:14
+PHASE_DONE bandit_ucb_seeds123 elapsed_sec=8552 2026-05-15T01:38:14Z
+SOTA_BANDIT_INDUSTRY_DONE 2026-05-15T01:38:14Z

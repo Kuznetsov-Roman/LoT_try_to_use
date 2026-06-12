@@ -1,0 +1,19 @@
+Thu May 14 21:32:45 MSK 2026
+name, memory.total [MiB]
+NVIDIA A100-SXM4-80GB, 81920 MiB
+PHASE_START adalrs_default_seeds123 2026-05-14T18:32:45Z
+RUN_DONE adalrs_default_seed3_60ep exit=0 20:54:59
+RUN_DONE adalrs_default_seed2_60ep exit=0 20:54:59
+RUN_DONE adalrs_default_seed1_60ep exit=0 20:55:00
+PHASE_DONE adalrs_default_seeds123 elapsed_sec=8535 2026-05-14T20:55:00Z
+PHASE_START adalrs_narrow_safe_seeds123 2026-05-14T20:55:00Z
+RUN_DONE adalrs_narrow_safe_seed2_60ep exit=0 23:17:16
+RUN_DONE adalrs_narrow_safe_seed3_60ep exit=0 23:17:17
+RUN_DONE adalrs_narrow_safe_seed1_60ep exit=0 23:17:23
+PHASE_DONE adalrs_narrow_safe_seeds123 elapsed_sec=8543 2026-05-14T23:17:23Z
+PHASE_START adalrs_aggressive_seeds123 2026-05-14T23:17:23Z
+RUN_DONE adalrs_aggressive_seed2_60ep exit=0 01:39:12
+RUN_DONE adalrs_aggressive_seed3_60ep exit=0 01:39:13
+RUN_DONE adalrs_aggressive_seed1_60ep exit=0 01:39:21
+PHASE_DONE adalrs_aggressive_seeds123 elapsed_sec=8518 2026-05-15T01:39:21Z
+SOTA_ADALRS_STARS_DONE 2026-05-15T01:39:21Z
