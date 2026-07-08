@@ -1047,7 +1047,6 @@ def evaluate(teacher, student, loader, epoch):
         }
         student_scores_for_features = student_concat[:, 1:]
 
-    torch.save(metrics, os.path.join(snapshot_dir, f'data_epoch_{epoch}.pt'))
     with open(os.path.join(snapshot_dir, 'metrics.jsonl'), 'a', encoding='utf-8') as f:
         f.write(json.dumps(metrics) + '\n')
 
@@ -1072,7 +1071,7 @@ def evaluate(teacher, student, loader, epoch):
 
     steps = np.column_stack(list(result_student.values()))[0]
     features = torch.tensor(np.concatenate([steps, mean_vector, std_vector]), dtype=torch.float32)
-    return [avg_teacher_loss, avg_student_loss, features]
+    return [avg_teacher_loss, avg_student_loss, features, metrics]
 
 
 def train(teacher, student, loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler):
@@ -1292,7 +1291,6 @@ def main():
     try:
         model_gru = None
         features_list = []
-        print('bibka')
         config=configparser.ConfigParser()
         config.read('key.config')
         #wandb_username=config.get('WANDB', 'USER_NAME')
@@ -1496,6 +1494,8 @@ def main():
 
         shock_active_log = []
 
+        metric_array = []
+
         for epoch in range(args.start_epoch, args.epochs+1):
             # ---- Perturbation toggles for this epoch ------------------------
             # Activate / deactivate dataset noise based on start_epoch flags.
@@ -1551,6 +1551,9 @@ def main():
                 pass
             train(teacher, student, train_loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler)
             eval_out = evaluate(teacher, student, test_loader, epoch)
+
+            metric_array.append(eval_out[3])
+
             args._student_test_losses.append(float(eval_out[1]))
             features_list.append(prepare_policy_feature(eval_out[2], epoch, args, student_scheduler))
 
@@ -1670,6 +1673,7 @@ def main():
         os.makedirs(os.path.dirname(args.save) or '.', exist_ok=True)
         torch.save(teacher.state_dict(), args.save+'_teacher.pt')
         torch.save(student.state_dict(), args.save+'_student.pt')
+        torch.save(metric_array,  os.path.join(snapshot_dir,'metrics'))
         print('ckpt location:', args.save)
         #wandb.finish()
 
