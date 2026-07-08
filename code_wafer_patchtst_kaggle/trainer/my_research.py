@@ -1292,7 +1292,7 @@ def main():
     try:
         model_gru = None
         features_list = []
-
+        print('bibka')
         config=configparser.ConfigParser()
         config.read('key.config')
         #wandb_username=config.get('WANDB', 'USER_NAME')
