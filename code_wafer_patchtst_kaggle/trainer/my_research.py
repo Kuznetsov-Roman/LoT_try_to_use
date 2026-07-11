@@ -1057,9 +1057,9 @@ def evaluate(teacher, student, loader, epoch):
     template_model = PreResNet(num_classes=args.num_classes, depth=args.policy_probe_depth, input_size=args.input_size).to(device)
 
     print("Running student landscape probe...")
-    #if second_batch_inputs is None or second_batch_targets is None:
-    #    second_batch_inputs = first_batch_inputs
-    #    second_batch_targets = first_batch_targets
+    if second_batch_inputs is None or second_batch_targets is None:
+        second_batch_inputs = first_batch_inputs
+        second_batch_targets = first_batch_targets
     result_student = research(
         model=template_model,
         x_batch_list=[first_batch_inputs.to(device), second_batch_inputs.to(device)],
