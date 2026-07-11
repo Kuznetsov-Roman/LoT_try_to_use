@@ -1068,10 +1068,9 @@ def evaluate(teacher, student, loader, epoch):
         snapshot=student.state_dict(),
         device=device,
     )
-    print("watafa")
+    
     steps = np.column_stack(list(result_student.values()))[0]
     features = torch.tensor(np.concatenate([steps, mean_vector, std_vector]), dtype=torch.float32)
-    print("pepe")
     return [avg_teacher_loss, avg_student_loss, features, metrics]
 
 
