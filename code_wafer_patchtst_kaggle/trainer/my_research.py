@@ -1495,7 +1495,7 @@ def main():
         shock_active_log = []
 
         metric_array = []
-        print("wow")
+
         for epoch in range(args.start_epoch, args.epochs+1):
             # ---- Perturbation toggles for this epoch ------------------------
             # Activate / deactivate dataset noise based on start_epoch flags.
@@ -1633,6 +1633,7 @@ def main():
                             # The optional zero-mean EMA centers policy_pred to fix the
                             # ensemble-bias collapse described in improve5h_combined/analysis/report.md.
                             policy_pred_centered = policy_pred
+                            print("aha")
                             if args.policy_zero_mean_ema > 0.0:
                                 ema = float(np.clip(args.policy_zero_mean_ema, 0.0, 0.999))
                                 if not args._policy_pred_ema_initialized:
