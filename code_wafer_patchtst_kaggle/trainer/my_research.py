@@ -1281,7 +1281,7 @@ if args.dataset in ('wafer', 'mydataset'):
     # The old exploratory script accidentally used [:, 1:] after hstack(labels, probs),
     # which gives 30 + 15 + 15 = 60 dims; keep it available behind a flag.
     if args.policy_input_dim == 230:
-        args.policy_input_dim = 60 if args.wafer_legacy_feature_slice else 46
+        args.policy_input_dim = 60 if args.wafer_legacy_feature_slice else 60
 else:
     args.is_multilabel = False
 #print(json.dumps(vars(args), indent=4))
