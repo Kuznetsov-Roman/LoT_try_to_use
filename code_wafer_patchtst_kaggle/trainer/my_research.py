@@ -1068,7 +1068,7 @@ def evaluate(teacher, student, loader, epoch):
         snapshot=student.state_dict(),
         device=device,
     )
-    
+
     steps = np.column_stack(list(result_student.values()))[0]
     features = torch.tensor(np.concatenate([steps, mean_vector, std_vector]), dtype=torch.float32)
     return [avg_teacher_loss, avg_student_loss, features, metrics]
@@ -1495,7 +1495,7 @@ def main():
         shock_active_log = []
 
         metric_array = []
-
+        print("wow")
         for epoch in range(args.start_epoch, args.epochs+1):
             # ---- Perturbation toggles for this epoch ------------------------
             # Activate / deactivate dataset noise based on start_epoch flags.
@@ -1549,6 +1549,7 @@ def main():
                     }) + '\n')
             except Exception:
                 pass
+
             train(teacher, student, train_loader, epoch, args, teacher_optimizer, student_optimizer, teacher_scheduler, student_scheduler)
             eval_out = evaluate(teacher, student, test_loader, epoch)
 
